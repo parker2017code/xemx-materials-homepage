@@ -19,7 +19,7 @@ export function EcosystemSupport() {
         <SectionHeader
           eyebrow="Extended project support"
           title="Broader support when a material map needs deeper follow-up"
-          description="Some campaigns need deeper follow-up after the first material map. Through the Bochum materials and interfaces environment, selected projects may connect to additional characterization, microscopy, microfabrication, interface analysis, localized electrochemistry, and data-analysis expertise."
+          description="Some campaigns benefit from deeper follow-up after the first material map. Bochum-based characterization, microscopy, microfabrication, interface analysis, localized electrochemistry, and data-analysis expertise can support that work."
         />
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -38,7 +38,7 @@ export function EcosystemSupport() {
         </div>
 
         <p className="mt-6 max-w-4xl text-sm leading-6 text-slate-500">
-          This should stay framed as selected project support, not as a standard product menu or a claim that every tool is owned by xemX.
+          These routes sit downstream of the core screening campaign and help explain or prepare selected candidate regions.
         </p>
       </div>
     </section>

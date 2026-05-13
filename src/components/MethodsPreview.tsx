@@ -20,7 +20,7 @@ export function MethodsPreview() {
           <SectionHeader
             eyebrow="Methods"
             title="Methods used in campaigns"
-            description="Methods should support the customer decision. The homepage names enough tools to build trust, while a later methods page can explain the details."
+            description="Methods are chosen after the material question is defined. The deeper methods page explains the technical routes behind the campaign."
           />
 
           <div className="grid gap-3 sm:grid-cols-2">

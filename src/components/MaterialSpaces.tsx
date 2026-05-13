@@ -42,7 +42,7 @@ export function MaterialSpaces() {
       <SectionHeader
         eyebrow="Material spaces"
         title="Material spaces that fit this approach"
-        description="This is the broader homepage bridge: not industries first, and not instruments first, but material search spaces where physical libraries and measured maps can reduce guessing."
+        description="These spaces fit when a physical library and measured property map can reduce the number of final-format tests."
       />
 
       <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

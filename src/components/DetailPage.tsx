@@ -3,14 +3,12 @@ import type { DetailGroup } from "../data/siteInventory"
 
 const statusLabel = {
   core: "Core",
-  ecosystem: "Ecosystem",
-  verify: "Verify",
+  support: "Support",
 }
 
 const statusClass = {
   core: "bg-blue-50 text-blue-700",
-  ecosystem: "bg-teal-50 text-teal-700",
-  verify: "bg-amber-50 text-amber-700",
+  support: "bg-teal-50 text-teal-700",
 }
 
 type DetailPageProps = {

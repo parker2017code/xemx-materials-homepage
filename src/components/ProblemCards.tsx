@@ -20,7 +20,7 @@ const cards = [
   },
   {
     title: "Final format is too costly for blind exploration",
-    body: "Full devices, cells, coated parts, or package-level builds should test narrowed candidates, not every early idea.",
+    body: "Full devices, cells, coated parts, or package-level builds are better used on narrowed candidates, not every early idea.",
     icon: BadgeEuro,
   },
 ]

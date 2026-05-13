@@ -8,7 +8,7 @@ export function ApplicationGrid() {
       <SectionHeader
         eyebrow="Applications"
         title="Material questions we can help screen"
-        description="Each application should be written as a practical material question, with final device, cell, package, or hardware validation kept in the right place."
+        description="Each area starts from a practical material question, with screening used before final device, cell, package, or hardware validation."
       />
 
       <div className="mt-10 grid gap-5 md:grid-cols-2">

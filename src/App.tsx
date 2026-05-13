@@ -50,7 +50,7 @@ function ExamplesPage() {
           Example campaign shapes, written as material questions.
         </h1>
         <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-600">
-          These are not fake case studies. They show how a useful project can be framed: question, campaign, output, and next step.
+          Each example follows the same practical arc: material question, campaign, output, and next step.
         </p>
       </section>
       <ExampleCampaigns />
@@ -83,7 +83,7 @@ export default function App() {
       <DetailPage
         eyebrow="Capabilities"
         title="The full campaign capability model."
-        description="This page makes the broader inventory recoverable: what is core to the xemX campaign platform, what belongs to the measurement stack, what supports campaign intelligence, and what should be described as selected ecosystem access."
+        description="xemX capabilities are grouped by the work they do in a campaign: creating the material library, measuring the right properties, interpreting the map, and supporting deeper follow-up."
         groups={capabilityGroups}
       />
     )
@@ -94,7 +94,7 @@ export default function App() {
       <DetailPage
         eyebrow="Methods"
         title="The tools behind the campaign."
-        description="Methods are separated from capabilities so the site starts with customer decisions, then explains how the campaign is built technically."
+        description="The methods page explains the technical routes used to create libraries, measure properties, and turn results into a usable material map."
         groups={methodGroups}
       />
     )

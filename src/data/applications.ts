@@ -18,7 +18,7 @@ export const applications: Application[] = [
     title: "RF acoustic films",
     description:
       "AlN, AlScN, ScAlN, and related piezoelectric films where composition and texture affect device behavior.",
-    fit: "Useful when composition windows need to be selected before resonator-level validation remains with the customer.",
+    fit: "Useful when composition windows need to be selected before resonator-level testing.",
     examples: ["AlScN", "texture windows", "piezoelectric response"],
   },
   {

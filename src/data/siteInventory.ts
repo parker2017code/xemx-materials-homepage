@@ -3,7 +3,7 @@ export type DetailGroup = {
   intro: string
   items: Array<{
     name: string
-    status?: "core" | "ecosystem" | "verify"
+    status?: "core" | "support"
     plain: string
     technical?: string
     note?: string
@@ -20,7 +20,7 @@ export const capabilityGroups: DetailGroup[] = [
         name: "Combinatorial thin-film material libraries",
         status: "core",
         plain: "Many related material compositions are created in one campaign instead of one sample at a time.",
-        technical: "Composition-spread thin-film libraries, usually built around a defined material question.",
+        technical: "Composition-spread thin-film libraries built around a defined material question.",
       },
       {
         name: "100 mm wafer library format",
@@ -32,7 +32,7 @@ export const capabilityGroups: DetailGroup[] = [
         name: "Hundreds of measured points",
         status: "core",
         plain: "The customer gets a measured map, not just a handful of isolated samples.",
-        technical: "Use approved project numbers when Lars/Sven confirm the public count.",
+        technical: "Measured positions are reported with composition and property context.",
       },
       {
         name: "Multisource magnetron co-sputtering",
@@ -44,7 +44,7 @@ export const capabilityGroups: DetailGroup[] = [
         name: "Multicomponent material spaces",
         status: "core",
         plain: "Campaigns can explore more than simple binary systems when the question requires it.",
-        technical: "Use approved cathode and element counts only after confirmation.",
+        technical: "Element sets and source configurations are chosen around the material question.",
       },
       {
         name: "Reactive sputtering",
@@ -59,9 +59,9 @@ export const capabilityGroups: DetailGroup[] = [
       },
       {
         name: "Follow-on uniform depositions",
-        status: "verify",
-        plain: "Promising regions may be prepared as more uniform follow-up samples for validation.",
-        note: "Keep this conditional until the standard delivery model is confirmed.",
+        status: "support",
+        plain: "Promising regions can be prepared as more uniform follow-up samples for validation.",
+        note: "Used when a screening map points to a region worth preparing in a simpler format.",
       },
     ],
   },
@@ -114,9 +114,9 @@ export const capabilityGroups: DetailGroup[] = [
       },
       {
         name: "Automated pattern analysis",
-        status: "verify",
+        status: "support",
         plain: "Software can help interpret large sets of structural data from a campaign.",
-        technical: "XCA / AI-assisted XRD analysis should be named only if approved.",
+        technical: "Automated analysis supports interpretation of large XRD data sets.",
       },
     ],
   },
@@ -134,7 +134,7 @@ export const capabilityGroups: DetailGroup[] = [
       {
         name: "Composition-property maps",
         status: "core",
-        plain: "The output shows which regions look promising, which fail, and what should be tested next.",
+        plain: "The output shows which regions look promising, which fail, and what to test next.",
       },
       {
         name: "Multi-property tradeoff comparison",
@@ -145,7 +145,7 @@ export const capabilityGroups: DetailGroup[] = [
       {
         name: "Data-guided iteration",
         status: "core",
-        plain: "Use the first measured map to decide where the next campaign should focus.",
+        plain: "Use the first measured map to decide where the next campaign focuses.",
         technical: "Active learning, Bayesian optimization, or Gaussian-process-guided selection when appropriate.",
       },
       {
@@ -157,57 +157,57 @@ export const capabilityGroups: DetailGroup[] = [
     ],
   },
   {
-    title: "Extended ecosystem access",
+    title: "Extended project support",
     intro:
-      "Selected projects may connect to broader Bochum materials and interfaces resources. This should stay separate from standard xemX-owned deliverables.",
+      "Broader follow-up routes are available when a campaign needs deeper characterization, fabrication support, or interface analysis.",
     items: [
       {
         name: "Electron microscopy",
-        status: "ecosystem",
+        status: "support",
         plain: "Follow-up imaging for surfaces, structures, interfaces, or candidate materials.",
-        technical: "SEM, TEM, and related microscopy through broader ecosystem support.",
+        technical: "SEM, TEM, and related microscopy through broader support routes.",
       },
       {
         name: "Cross-section and interface analysis",
-        status: "ecosystem",
+        status: "support",
         plain: "Deeper inspection of thin-film stacks and interfaces when selected candidates need explanation.",
         technical: "FIB preparation, TEM follow-up, advanced interface analysis.",
       },
       {
         name: "Nanoscale composition analysis",
-        status: "ecosystem",
+        status: "support",
         plain: "Advanced composition analysis for selected nanoscale questions.",
-        technical: "APT or similar methods only if available for the project.",
+        technical: "Advanced nanoscale composition analysis for follow-up questions.",
       },
       {
         name: "3D structure and surface methods",
-        status: "ecosystem",
+        status: "support",
         plain: "Additional structural or surface analysis where the material question requires it.",
         technical: "X-ray tomography, AFM, scanning probe methods.",
       },
       {
         name: "Localized electrochemistry expertise",
-        status: "ecosystem",
+        status: "support",
         plain: "Broader electrochemical methods can support selected surface or interface questions.",
-        technical: "SECM / SECCM-type expertise should be phrased carefully.",
+        technical: "SECM / SECCM-type methods for surface and interface questions.",
       },
       {
         name: "Micro/nano fabrication support",
-        status: "ecosystem",
-        plain: "Selected projects may connect screening results to test structures or microfabrication workflows.",
-        technical: "Cleanroom, etch, patterning, and related support only through confirmed project routes.",
+        status: "support",
+        plain: "Campaign results can connect to test structures or microfabrication workflows.",
+        technical: "Cleanroom, etch, patterning, and related support through project routes.",
       },
       {
         name: "Modeling and data analysis",
-        status: "ecosystem",
+        status: "support",
         plain: "Computational analysis can support campaign design and interpretation.",
-        note: "Keep physical measured data as the core story.",
+        note: "The core output remains measured data from real samples.",
       },
       {
         name: "Partner manufacturing or scale-up",
-        status: "verify",
-        plain: "Selected candidates may move toward customer validation or partner-supported prototype production.",
-        note: "Do not imply production scale-up unless formally available.",
+        status: "support",
+        plain: "Selected candidates can move toward customer validation or partner-supported prototype production.",
+        note: "A screening result can feed follow-up samples, customer validation, or prototype routes.",
       },
     ],
   },
@@ -235,8 +235,8 @@ export const methodGroups: DetailGroup[] = [
       },
       {
         name: "Uniform follow-up samples",
-        status: "verify",
-        plain: "A promising region can be prepared as a simpler follow-up sample if that is part of the project scope.",
+        status: "support",
+        plain: "A promising region can be prepared as a simpler follow-up sample for validation.",
       },
     ],
   },
@@ -255,13 +255,13 @@ export const methodGroups: DetailGroup[] = [
   },
   {
     title: "Analysis methods",
-    intro: "Methods that help decide where the next experiment should focus.",
+    intro: "Methods that help decide where the next experiment focuses.",
     items: [
       { name: "Composition-property maps", status: "core", plain: "Measured maps tying properties to composition regions." },
       { name: "Multi-property comparison", status: "core", plain: "Tradeoff analysis when several properties matter at once." },
       { name: "Active learning", status: "core", plain: "Measured results guide the next campaign instead of guessing the next sample." },
-      { name: "Bayesian optimization", status: "core", plain: "Optimization support for large search spaces when the data and question fit." },
-      { name: "Automated XRD pattern analysis", status: "verify", plain: "Useful support capability, but avoid leading with software-first language." },
+      { name: "Bayesian optimization", status: "core", plain: "Optimization support for large search spaces with enough measured data." },
+      { name: "Automated XRD pattern analysis", status: "support", plain: "Pattern analysis helps turn large structural data sets into readable campaign outputs." },
     ],
   },
 ]
@@ -271,48 +271,48 @@ export const applicationFamilies = [
     title: "Semiconductor thin films",
     focus: ["low-resistance metals", "barriers, liners, caps, contacts", "memory stacks", "gate insulator-adjacent oxides"],
     measures: "phase, texture, resistivity, composition, and structure screening",
-    caution: "Device-level validation remains customer-side.",
+    caution: "Device-level testing comes after the screen.",
   },
   {
     title: "RF acoustic films",
     focus: ["AlN", "AlScN / ScAlN", "film texture", "composition windows"],
     measures: "composition, structure, texture, electrical or mechanical proxies",
-    caution: "Resonator-level validation remains customer-side.",
+    caution: "Resonator-level testing comes after the screen.",
   },
   {
     title: "Electrochemical materials",
     focus: ["water electrolysis catalysts", "CO2 electrolysis catalysts", "electrode surfaces", "activity and stability"],
     measures: "localized electrochemical screening tied to composition and surface behavior",
-    caution: "Full cell or hardware validation remains downstream.",
+    caution: "Full cell or hardware testing comes after the screen.",
   },
   {
     title: "Conductive protective coatings",
     focus: ["bipolar plates", "electrochemical hardware", "surface layers", "protection plus electrical behavior"],
     measures: "composition, structure, resistance, hardness, and electrochemical behavior where relevant",
-    caution: "Hardware testing remains a separate validation stage.",
+    caution: "Hardware testing comes after the screen.",
   },
   {
     title: "Battery interfaces",
     focus: ["current collector coatings", "solid-state interfaces", "protective layers", "thin interface films"],
     measures: "composition, structure, surface behavior, and selected electrochemical response",
-    caution: "Full cell validation remains with the customer or validation partner.",
+    caution: "Full cell validation comes after the screen.",
   },
   {
     title: "Magnetic thin films",
     focus: ["magnetic multilayers", "coercivity", "magnetic response", "reduced-rare-earth directions"],
     measures: "MOKE, composition mapping, and phase or structure mapping",
-    caution: "Stack-specific validation remains downstream.",
+    caution: "Stack-specific validation comes after the screen.",
   },
   {
     title: "Optical and functional coatings",
     focus: ["reflectance", "absorption", "transparency", "glass coatings", "photonic thin films"],
     measures: "optical response, composition, phase, and stability-relevant behavior",
-    caution: "Final coating stack or photonic device validation remains separate.",
+    caution: "Final coating stack or photonic device validation comes after the screen.",
   },
   {
     title: "Advanced packaging interfaces",
     focus: ["bonding layers", "adhesion layers", "diffusion barriers", "surface layers"],
     measures: "composition, structure, mechanical response, and interface-relevant screening",
-    caution: "Package-level reliability remains customer-side.",
+    caution: "Package-level reliability testing comes after the screen.",
   },
 ]

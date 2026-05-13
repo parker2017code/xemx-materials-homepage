@@ -6,7 +6,7 @@ const capabilityGroups = [
   {
     title: "Core campaign platform",
     description:
-      "Physical material libraries, composition-gradient samples, co-sputtering, reactive sputtering, 100 mm wafer libraries, hundreds of measured points, multicomponent material spaces, and follow-on samples where appropriate.",
+      "Physical material libraries, composition-gradient samples, co-sputtering, reactive sputtering, 100 mm wafer libraries, hundreds of measured points, multicomponent material spaces, and follow-on samples for selected candidate regions.",
     icon: Boxes,
     items: ["material libraries", "composition gradients", "multicomponent spaces", "follow-on samples"],
   },
@@ -25,7 +25,7 @@ const capabilityGroups = [
     items: ["experimental design", "tradeoff comparison", "active learning", "next-campaign selection"],
   },
   {
-    title: "Extended ecosystem access",
+    title: "Extended project support",
     description:
       "Selected projects can connect to broader Bochum-based characterization, microscopy, interface analysis, localized electrochemistry, micro/nano-fabrication, and data-analysis resources.",
     icon: Network,
@@ -40,7 +40,7 @@ export function CapabilityGrid() {
         <SectionHeader
           eyebrow="Capabilities"
           title="What a xemX campaign can include"
-          description="The homepage should not start with an equipment list. It should show how the campaign is built around the material decision."
+          description="A campaign starts with the material decision, then selects the library design, measurements, and analysis needed to make that decision."
         />
 
         <div className="mt-10 grid gap-5 lg:grid-cols-2">
@@ -78,7 +78,7 @@ export function CapabilityGrid() {
         </div>
 
         <p className="mt-8 max-w-3xl rounded-3xl border border-slate-200 bg-slate-50 p-5 text-sm leading-6 text-slate-600">
-          Not every method belongs in every project. The campaign is designed around the decision the customer needs to make, not around filling a generic measurement menu.
+          The measurement plan changes by project. The common output is a measured map for choosing the next validation step.
         </p>
       </div>
     </section>

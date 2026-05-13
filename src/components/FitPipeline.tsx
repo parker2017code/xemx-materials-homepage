@@ -43,7 +43,7 @@ export function FitPipeline() {
         </motion.div>
 
         <p className="mt-8 max-w-4xl rounded-3xl border border-blue-100 bg-white p-5 text-sm leading-6 text-slate-600">
-          Final device integration, full-stack testing, long-duration qualification, battery cell validation, or production approval usually remains with the customer or a dedicated validation partner.
+          Final device integration, full-stack testing, long-duration qualification, battery cell validation, and production approval are separate validation steps after screening.
         </p>
       </div>
     </section>
