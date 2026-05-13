@@ -9,7 +9,8 @@ const methods = [
   "Electrical screening",
   "Mechanical screening",
   "Optical / magnetic screening",
-  "Localized electrochemical screening",
+  "SDC / SECCM electrochemistry",
+  "Active-learning measurement",
 ]
 
 export function MethodsPreview() {

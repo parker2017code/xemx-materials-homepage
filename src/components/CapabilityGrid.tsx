@@ -1,35 +1,35 @@
-import { BarChart3, Boxes, Microscope, Network } from "lucide-react"
+import { BarChart3, Boxes, Droplets, Microscope } from "lucide-react"
 import { motion } from "framer-motion"
 import { SectionHeader } from "./SectionHeader"
 
 const capabilityGroups = [
   {
-    title: "Core campaign platform",
+    title: "Core: thin-film material libraries",
     description:
-      "Physical material libraries, composition-gradient samples, co-sputtering, reactive sputtering, 100 mm wafer libraries, hundreds of measured points, multicomponent material spaces, and follow-on samples for selected candidate regions.",
+      "Combinatorial thin-film material libraries, composition-gradient samples, co-sputtering, reactive sputtering, 100 mm wafer formats, and multicomponent material spaces.",
     icon: Boxes,
-    items: ["material libraries", "composition gradients", "multicomponent spaces", "follow-on samples"],
+    items: ["real samples", "composition gradients", "multicomponent spaces", "wafer libraries"],
   },
   {
-    title: "Measurement stack",
+    title: "High-throughput measured maps",
     description:
-      "Composition mapping, phase and structure mapping, electrical screening, mechanical screening, optical screening, magnetic screening, and localized electrochemical screening.",
+      "Composition, phase, structure, electrical, mechanical, optical, and magnetic measurements are tied back to positions in the library.",
     icon: Microscope,
-    items: ["composition", "phase and structure", "electrical and mechanical", "optical, magnetic, electrochemical"],
+    items: ["composition", "phase and structure", "electrical", "mechanical, optical, magnetic"],
   },
   {
-    title: "Campaign intelligence",
+    title: "Localized electrochemical screening",
     description:
-      "Experimental design, composition-property maps, multi-property tradeoff comparison, active learning, Bayesian optimization, and next-campaign selection.",
+      "Localized electrochemical screening compares activity, stability, and surface response across catalyst, electrode, and related surface material libraries.",
+    icon: Droplets,
+    items: ["SDC", "SECCM routes", "activity and stability", "surface response"],
+  },
+  {
+    title: "Data-guided iteration",
+    description:
+      "Measured maps support experimental design, multi-property tradeoff comparison, active-learning measurement selection, and next-campaign choices.",
     icon: BarChart3,
-    items: ["experimental design", "tradeoff comparison", "active learning", "next-campaign selection"],
-  },
-  {
-    title: "Extended project support",
-    description:
-      "Broader Bochum-based characterization, microscopy, interface analysis, localized electrochemistry, micro/nano-fabrication, and data-analysis resources support deeper follow-up when the material map points to candidate regions.",
-    icon: Network,
-    items: ["microscopy", "interface analysis", "localized electrochemistry", "micro/nano-fabrication"],
+    items: ["composition-property maps", "tradeoff comparison", "Gaussian-process selection", "next campaign"],
   },
 ]
 
@@ -40,7 +40,7 @@ export function CapabilityGrid() {
         <SectionHeader
           eyebrow="Capabilities"
           title="What a xemX campaign can include"
-          description="A campaign starts with the material decision, then selects the library design, measurements, and analysis needed to make that decision."
+          description="xemX is best understood by the campaign engine: make physical libraries, measure the map, compare tradeoffs, and decide what deserves validation."
         />
 
         <div className="mt-8 grid gap-5 lg:grid-cols-2">

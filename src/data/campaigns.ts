@@ -29,14 +29,34 @@ export const campaigns: Campaign[] = [
     nextStep: "Transfer the best windows into customer device stacks.",
   },
   {
-    title: "Electrochemical catalyst search",
-    category: "Electrochemical materials",
+    title: "Electrocatalyst composition search",
+    category: "Localized electrochemistry",
     question:
-      "Which mixed-metal surface gives the best activity and stability for the chosen reaction?",
+      "Which mixed-metal or complex-solid-solution surface gives useful activity and stability for the chosen reaction?",
     campaign:
-      "Prepare a catalyst library and run localized electrochemical measurements across the sample.",
+      "Prepare a catalyst material library and run localized electrochemical measurements across the sample.",
     output: "Measured activity map with regions to repeat or refine.",
     nextStep: "Validate selected catalysts under the customer test protocol.",
+  },
+  {
+    title: "High-entropy alloy screen",
+    category: "Complex alloys",
+    question:
+      "Which multicomponent alloy region is worth preparing again for a target property or electrochemical response?",
+    campaign:
+      "Create a composition-spread alloy library and map composition, phase, and the property tied to the decision.",
+    output: "Composition-property map showing candidate regions and regions to avoid.",
+    nextStep: "Prepare follow-up samples around the best region for customer validation.",
+  },
+  {
+    title: "Oxide or nitride library",
+    category: "Reactive sputtering",
+    question:
+      "Which oxide or nitride composition region forms the desired phase and property combination?",
+    campaign:
+      "Use reactive sputtering to create a library, then map composition, structure, and the relevant functional property.",
+    output: "Measured map linking stoichiometry, phase, and property response.",
+    nextStep: "Run a narrower campaign or prepare selected uniform films.",
   },
   {
     title: "Conductive protective coating",
@@ -59,23 +79,13 @@ export const campaigns: Campaign[] = [
     nextStep: "Move selected regions into stack-specific or device-adjacent validation.",
   },
   {
-    title: "Optical coating screen",
-    category: "Optical films",
+    title: "Optical or photoelectrochemical film",
+    category: "Functional thin films",
     question:
-      "Which oxide or nitride film regions balance transparency, reflectance, absorption, and stability-relevant behavior?",
+      "Which film regions balance optical response, composition, phase, and stability-relevant behavior?",
     campaign:
-      "Map optical response, composition, and structure across a controlled thin-film library.",
+      "Map optical or photoelectrochemical response, composition, and structure across a controlled thin-film library.",
     output: "Optical-property map showing candidate regions and tradeoffs.",
     nextStep: "Prepare follow-up films for customer coating or photonic test structures.",
-  },
-  {
-    title: "Battery interface layer",
-    category: "Battery interfaces",
-    question:
-      "Which thin interface or current-collector coating candidates deserve full cell validation?",
-    campaign:
-      "Screen composition, structure, surface behavior, and relevant electrochemical response across candidate layers.",
-    output: "Shortlist of interface regions for the customer battery test protocol.",
-    nextStep: "Validate selected layers in the customer's final cell or stack format.",
   },
 ]

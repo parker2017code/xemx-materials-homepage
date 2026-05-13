@@ -5,7 +5,7 @@ import { SectionHeader } from "./SectionHeader"
 const cards = [
   {
     title: "Too many compositions",
-    body: "Alloys, dopants, coatings, catalysts, and thin-film stacks create more options than most teams can test one by one.",
+    body: "Alloys, oxides, nitrides, catalysts, dopants, interfaces, and thin-film stacks create more options than most teams can test one by one.",
     icon: Layers3,
   },
   {
@@ -31,7 +31,7 @@ export function ProblemCards() {
       <SectionHeader
         eyebrow="The problem"
         title="Material development gets slow when every option needs its own test."
-        description="Many R&D teams know the property they need, but not which composition, coating, interface, or process condition will get them there. Testing one material at a time is slow. Final validation is expensive. Literature and simulations can help, but they do not replace measured data from real samples."
+        description="Many R&D teams have too many possible material choices to test one by one. Compositions, dopants, coatings, thin-film stacks, process conditions, surface chemistries, and interfaces can all change performance."
       />
 
       <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">

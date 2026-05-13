@@ -3,8 +3,8 @@ import { SectionHeader } from "./SectionHeader"
 
 const spaces = [
   {
-    title: "Metals and alloys",
-    text: "Multicomponent spaces where composition, phase, resistance, hardness, or magnetic behavior can shift quickly.",
+    title: "Complex alloys",
+    text: "High-entropy alloys, complex solid solutions, and shape-memory directions where composition, phase, resistance, hardness, or magnetic behavior can shift quickly.",
   },
   {
     title: "Oxides and nitrides",
@@ -16,11 +16,11 @@ const spaces = [
   },
   {
     title: "Catalysts and electrodes",
-    text: "Composition libraries that can be compared by localized electrochemical behavior before cell-level testing.",
+    text: "Composition libraries compared by local electrochemical activity, stability, or surface response before cell or hardware testing.",
   },
   {
-    title: "Protective coatings",
-    text: "Surface layers where durability, conductivity, optical behavior, or chemical stability need to be balanced.",
+    title: "Photoelectrochemical films",
+    text: "Semiconductor and oxide film libraries where optical response and electrochemical behavior need to be read together.",
   },
   {
     title: "Magnetic films",
@@ -33,6 +33,10 @@ const spaces = [
   {
     title: "Interface layers",
     text: "Bonding, barrier, adhesion, current collector, or package-adjacent films before final-format validation.",
+  },
+  {
+    title: "Functional surface layers",
+    text: "Protective or conductive surface layers where durability, electrical behavior, or chemical stability need to be balanced.",
   },
 ]
 

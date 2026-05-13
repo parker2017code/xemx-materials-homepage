@@ -16,6 +16,8 @@ Before publishing it as the main public site, run a separate launch pass for:
 - Performance: check bundle size, font loading, SVG cost, and unused animation code.
 - Legal and compliance: add final imprint, privacy policy, terms, and contact/legal details required for a GmbH site.
 - Content approval: confirm application wording, validation boundaries, ecosystem support wording, and all technical method names.
+- Literature positioning: keep the public hierarchy centered on combinatorial thin-film material libraries, high-throughput characterization, measured composition-property maps, localized electrochemical screening, and data-guided iteration.
+- Current public-site proof points checked on 2026-05-13: 37 available elements, 342 compositions per campaign, up to 7 cathodes per run, and 100 mm single-wafer libraries.
 - Production deployment: decide between GitHub Pages, Netlify, Vercel, or another host with real access control for private staging.
 
 Current private-preview posture:

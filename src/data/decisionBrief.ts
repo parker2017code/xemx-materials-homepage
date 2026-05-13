@@ -2,21 +2,21 @@ import { ClipboardList, FlaskConical, MapPinned, MoveRight } from "lucide-react"
 
 export const decisionBrief = [
   {
-    label: "Customer question",
-    title: "What region is worth testing next?",
-    text: "Start with the material family, property target, constraints, and current bottleneck.",
+    label: "Make libraries",
+    title: "Put many related compositions on one sample.",
+    text: "Use co-sputtered thin-film libraries and composition gradients instead of one sample at a time.",
     icon: ClipboardList,
   },
   {
-    label: "Campaign design",
-    title: "Which library and measurements answer it?",
-    text: "Choose the composition space, sample format, measurement stack, and comparison logic.",
+    label: "Measure systematically",
+    title: "Map what formed and how it behaves.",
+    text: "Measure composition, structure, and the properties that matter to the material question.",
     icon: FlaskConical,
   },
   {
-    label: "Measured output",
-    title: "Which candidates deserve validation?",
-    text: "Return composition-property maps, tradeoff views, and follow-up regions.",
+    label: "Narrow candidates",
+    title: "Use the map to choose the next test.",
+    text: "Compare tradeoffs, rule out weak regions, and focus follow-up work where the data points.",
     icon: MapPinned,
   },
 ]

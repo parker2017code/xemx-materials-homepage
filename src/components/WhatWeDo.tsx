@@ -6,7 +6,7 @@ const items = [
   {
     number: "01",
     title: "Create material libraries",
-    body: "Build physical thin-film or coating libraries with many related material variations in one campaign.",
+    body: "Build physical combinatorial thin-film libraries with many related material variations in one campaign.",
     icon: Beaker,
   },
   {
@@ -18,7 +18,7 @@ const items = [
   {
     number: "03",
     title: "Measure what matters",
-    body: "Add electrical, mechanical, optical, magnetic, or electrochemical screening depending on the material question.",
+    body: "Add electrical, mechanical, optical, magnetic, or localized electrochemical screening depending on the material question.",
     icon: Waypoints,
   },
   {
@@ -37,7 +37,7 @@ export function WhatWeDo() {
           <SectionHeader
             eyebrow="What xemX does"
             title="xemX turns material search spaces into measured maps."
-            description="The campaign starts with the decision the customer needs to make: which material region is worth testing next, which candidates deserve expensive validation, and which composition-property tradeoffs matter."
+            description="xemX makes physical material libraries, measures many related variations, and turns the results into maps that show which material regions are worth testing next."
           />
         </div>
 

@@ -110,7 +110,7 @@ export const capabilityGroups: DetailGroup[] = [
         name: "Localized electrochemical screening",
         status: "core",
         plain: "Compares activity, stability, or surface behavior across many material compositions.",
-        technical: "Scanning Droplet Cell for selected electrochemical campaigns.",
+        technical: "Scanning Droplet Cell, with SECCM routes where the project calls for higher-resolution local electrochemistry.",
       },
       {
         name: "Automated pattern analysis",
@@ -146,7 +146,7 @@ export const capabilityGroups: DetailGroup[] = [
         name: "Data-guided iteration",
         status: "core",
         plain: "Use the first measured map to decide where the next campaign focuses.",
-        technical: "Active learning, Bayesian optimization, or Gaussian-process-guided selection when appropriate.",
+        technical: "Active learning and Gaussian-process-guided measurement selection when appropriate.",
       },
       {
         name: "Thin-film proxy discipline",
@@ -186,12 +186,6 @@ export const capabilityGroups: DetailGroup[] = [
         technical: "X-ray tomography, AFM, scanning probe methods.",
       },
       {
-        name: "Localized electrochemistry expertise",
-        status: "support",
-        plain: "Broader electrochemical methods can support selected surface or interface questions.",
-        technical: "SECM / SECCM-type methods for surface and interface questions.",
-      },
-      {
         name: "Micro/nano fabrication support",
         status: "support",
         plain: "Campaign results can connect to test structures or microfabrication workflows.",
@@ -202,12 +196,6 @@ export const capabilityGroups: DetailGroup[] = [
         status: "support",
         plain: "Computational analysis can support campaign design and interpretation.",
         note: "The core output remains measured data from real samples.",
-      },
-      {
-        name: "Partner manufacturing or scale-up",
-        status: "support",
-        plain: "Selected candidates can move toward customer validation or partner-supported prototype production.",
-        note: "A screening result can feed follow-up samples, customer validation, or prototype routes.",
       },
     ],
   },
@@ -251,6 +239,9 @@ export const methodGroups: DetailGroup[] = [
       { name: "UV-VIS", status: "core", plain: "Optical reflectance, absorption, or transparency-related screening." },
       { name: "MOKE", status: "core", plain: "Magnetic response mapping across composition space." },
       { name: "Scanning Droplet Cell", status: "core", plain: "Localized electrochemical activity, stability, or surface behavior screening." },
+      { name: "Long-range SECCM", status: "support", plain: "Higher-resolution local electrochemical mapping across large material libraries." },
+      { name: "SEM / AFM", status: "support", plain: "Microstructure and surface follow-up where the material question needs it." },
+      { name: "XPS / RBS / NRA", status: "support", plain: "Advanced composition, chemistry, depth, or light-element analysis where the project requires it." },
     ],
   },
   {
@@ -259,14 +250,34 @@ export const methodGroups: DetailGroup[] = [
     items: [
       { name: "Composition-property maps", status: "core", plain: "Measured maps tying properties to composition regions." },
       { name: "Multi-property comparison", status: "core", plain: "Tradeoff analysis when several properties matter at once." },
-      { name: "Active learning", status: "core", plain: "Measured results guide the next campaign instead of guessing the next sample." },
-      { name: "Bayesian optimization", status: "core", plain: "Optimization support for large search spaces with enough measured data." },
-      { name: "Automated XRD pattern analysis", status: "support", plain: "Pattern analysis helps turn large structural data sets into readable campaign outputs." },
+      { name: "Active learning", status: "core", plain: "Measured results guide the next measurement or campaign instead of guessing the next sample." },
+      { name: "Gaussian-process measurement selection", status: "core", plain: "A model can choose informative measurement points when the campaign has enough structure for it." },
+      { name: "XCA-assisted XRD analysis", status: "support", plain: "Automated phase-identification support can help interpret large diffraction data sets." },
+      { name: "VAE-style novelty detection", status: "support", plain: "Pattern analysis can help flag unknown or unusual XRD results for expert review." },
+      { name: "Deposition source permutations", status: "support", plain: "Multiple library campaigns can sample larger multielement spaces without pretending to cover every composition." },
     ],
   },
 ]
 
 export const applicationFamilies = [
+  {
+    title: "Electrocatalyst discovery",
+    focus: ["HER / OER / ORR", "mixed-metal catalysts", "complex solid solutions", "activity and stability"],
+    measures: "localized electrochemical screening tied to composition, phase, and surface behavior",
+    caution: "Full cell, stack, or hardware testing comes after the screen.",
+  },
+  {
+    title: "Complex alloys and solid solutions",
+    focus: ["high-entropy alloys", "complex solid solutions", "shape-memory directions", "composition-property maps"],
+    measures: "composition, phase, electrical, magnetic, mechanical, or electrochemical response depending on the question",
+    caution: "Bulk alloy, powder, or part-level validation comes after the screen.",
+  },
+  {
+    title: "Oxide and nitride libraries",
+    focus: ["perovskite oxides", "functional oxides", "transition-metal nitrides", "reactive sputtering"],
+    measures: "composition, phase, structure, optical, electrical, mechanical, or electrochemical behavior",
+    caution: "Final device, catalyst, coating, or hardware validation comes after the screen.",
+  },
   {
     title: "Semiconductor thin films",
     focus: ["low-resistance metals", "barriers, liners, caps, contacts", "memory stacks", "gate insulator-adjacent oxides"],
@@ -280,39 +291,21 @@ export const applicationFamilies = [
     caution: "Resonator-level testing comes after the screen.",
   },
   {
-    title: "Electrochemical materials",
-    focus: ["water electrolysis catalysts", "CO2 electrolysis catalysts", "electrode surfaces", "activity and stability"],
-    measures: "localized electrochemical screening tied to composition and surface behavior",
-    caution: "Full cell or hardware testing comes after the screen.",
-  },
-  {
-    title: "Conductive protective coatings",
-    focus: ["bipolar plates", "electrochemical hardware", "surface layers", "protection plus electrical behavior"],
-    measures: "composition, structure, resistance, hardness, and electrochemical behavior where relevant",
-    caution: "Hardware testing comes after the screen.",
-  },
-  {
-    title: "Battery interfaces",
-    focus: ["current collector coatings", "solid-state interfaces", "protective layers", "thin interface films"],
-    measures: "composition, structure, surface behavior, and selected electrochemical response",
-    caution: "Full cell validation comes after the screen.",
-  },
-  {
     title: "Magnetic thin films",
     focus: ["magnetic multilayers", "coercivity", "magnetic response", "reduced-rare-earth directions"],
     measures: "MOKE, composition mapping, and phase or structure mapping",
     caution: "Stack-specific validation comes after the screen.",
   },
   {
-    title: "Optical and functional coatings",
-    focus: ["reflectance", "absorption", "transparency", "glass coatings", "photonic thin films"],
-    measures: "optical response, composition, phase, and stability-relevant behavior",
-    caution: "Final coating stack or photonic device validation comes after the screen.",
+    title: "Photoelectrochemical and optical films",
+    focus: ["photoresponse", "reflectance", "absorption", "transparency", "photonic thin films"],
+    measures: "optical response, photoelectrochemical behavior, composition, phase, and stability-relevant behavior",
+    caution: "Final coating stack, photonic device, or photoelectrochemical validation comes after the screen.",
   },
   {
-    title: "Advanced packaging interfaces",
-    focus: ["bonding layers", "adhesion layers", "diffusion barriers", "surface layers"],
-    measures: "composition, structure, mechanical response, and interface-relevant screening",
-    caution: "Package-level reliability testing comes after the screen.",
+    title: "Protective and packaging interfaces",
+    focus: ["conductive protective surfaces", "bonding layers", "adhesion layers", "diffusion barriers"],
+    measures: "composition, structure, resistance, mechanical response, and interface-relevant screening",
+    caution: "Hardware or package-level reliability testing comes after the screen.",
   },
 ]

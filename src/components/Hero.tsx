@@ -2,25 +2,26 @@ import { ArrowRight } from "lucide-react"
 import { WaferVisual } from "./WaferVisual"
 
 const proofChips = [
-  "Physical material libraries",
-  "Hundreds of measured points",
+  "100 mm thin-film libraries",
+  "342 measured compositions",
+  "Up to 7 co-sputtered elements",
   "Composition-property maps",
-  "Electrical, mechanical, optical, magnetic, and electrochemical screening",
-  "Data-guided follow-up",
+  "SDC / SECCM electrochemistry",
+  "Active-learning follow-up",
 ]
 
 export function Hero() {
   return (
     <section id="top" className="mx-auto grid max-w-[1200px] gap-10 overflow-hidden px-6 pb-12 pt-12 sm:pt-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:px-10 lg:pb-16 lg:pt-16 xl:px-16">
-      <div className="min-w-0 max-w-[calc(100vw-3rem)] flex flex-col justify-center lg:max-w-none">
+      <div className="flex min-w-0 max-w-full flex-col justify-center">
         <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">
-          Materials space exploration
+          Experimental materials search
         </p>
-        <h1 className="max-w-4xl text-[2.2rem] font-semibold leading-[1.08] tracking-tight text-slate-950 min-[380px]:text-[2.35rem] sm:text-6xl lg:text-[4rem]">
-          Find the material regions worth testing next.
+        <h1 className="max-w-full text-[1.75rem] font-semibold leading-[1.1] tracking-tight text-slate-950 min-[380px]:text-[1.95rem] sm:max-w-4xl sm:text-6xl lg:text-[4rem]">
+          Test many real material variations before expensive validation.
         </h1>
-        <p className="mt-6 max-w-full text-lg leading-8 text-slate-600 sm:max-w-2xl sm:text-xl sm:leading-9">
-          xemX designs experimental campaigns for large material search spaces. We create real material libraries, measure how properties change across them, and help R&D teams narrow candidates before expensive validation.
+        <p className="mt-6 max-w-full text-[1.05rem] leading-8 text-slate-600 sm:max-w-2xl sm:text-xl sm:leading-9">
+          xemX helps R&D teams test many real material variations, measure which regions work, and narrow candidates before expensive validation.
         </p>
 
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -39,7 +40,7 @@ export function Hero() {
           </a>
         </div>
 
-        <div className="mt-7 flex max-w-full min-w-0 flex-wrap gap-2.5">
+        <div className="mt-7 flex max-w-full min-w-0 flex-col gap-2.5 sm:flex-row sm:flex-wrap">
           {proofChips.map((chip) => (
             <span key={chip} className="min-w-0 max-w-full whitespace-normal break-words rounded-full border border-slate-200 bg-white px-3.5 py-2 text-sm font-medium leading-5 text-slate-700 shadow-sm [overflow-wrap:anywhere]">
               {chip}
@@ -48,7 +49,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="min-w-0 max-w-[calc(100vw-3rem)] lg:max-w-none">
+      <div className="min-w-0 max-w-full">
         <WaferVisual />
       </div>
     </section>

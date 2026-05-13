@@ -7,6 +7,27 @@ export type Application = {
 
 export const applications: Application[] = [
   {
+    title: "Electrocatalyst discovery",
+    description:
+      "Catalyst and electrode material libraries where local activity, stability, and surface response need to be compared across many compositions.",
+    fit: "Useful for HER, OER, ORR, and complex catalyst compositions before full-cell or hardware testing.",
+    examples: ["HER / OER", "ORR", "complex catalysts"],
+  },
+  {
+    title: "Complex alloys and solid solutions",
+    description:
+      "High-entropy alloys, complex solid solutions, shape-memory directions, and multicomponent spaces where useful regions are hard to guess from single samples.",
+    fit: "Useful when composition changes phase, activity, hardness, electrical behavior, or magnetic response.",
+    examples: ["high-entropy alloys", "complex solid solutions", "shape-memory alloys"],
+  },
+  {
+    title: "Oxide and nitride libraries",
+    description:
+      "Reactive sputtered oxide and nitride libraries where composition, structure, stoichiometry, and properties need to be mapped together.",
+    fit: "Useful for electrocatalyst-relevant oxides, functional nitrides, hard films, optical films, and semiconductor-adjacent layers.",
+    examples: ["perovskite oxides", "transition-metal nitrides", "functional oxides"],
+  },
+  {
     title: "Semiconductor thin films",
     description:
       "Thin layers around contacts, barriers, liners, caps, gate insulators, memory stacks, and isolation areas.",
@@ -22,27 +43,6 @@ export const applications: Application[] = [
     examples: ["AlScN", "texture windows", "piezoelectric response"],
   },
   {
-    title: "Electrochemical materials",
-    description:
-      "Catalyst and electrode materials where activity and stability need to be compared across many variants.",
-    fit: "Useful for water electrolysis, CO2 electrolysis, electrode surfaces, and mixed-metal compositions.",
-    examples: ["mixed metals", "activity", "surface chemistry"],
-  },
-  {
-    title: "Protective coatings",
-    description:
-      "Coatings that need to balance hardness, durability, conductivity, optical behavior, or chemical stability.",
-    fit: "Useful when one property alone is not enough, such as protection plus electrical behavior.",
-    examples: ["hard films", "conductive coatings", "stable surfaces"],
-  },
-  {
-    title: "Battery interfaces",
-    description:
-      "Thin coatings, current collector surfaces, solid-state battery interfaces, and protective layers.",
-    fit: "Useful for early screening before full cell validation.",
-    examples: ["collector surfaces", "solid-state interfaces", "protective layers"],
-  },
-  {
     title: "Magnetic thin films",
     description:
       "Magnetic multilayers and composition spaces where phase, coercivity, and magnetic response need to be mapped.",
@@ -50,17 +50,17 @@ export const applications: Application[] = [
     examples: ["multilayers", "coercivity", "magnetic response"],
   },
   {
-    title: "Optical coatings",
+    title: "Optical and photoelectrochemical films",
     description:
-      "Thin films where transparency, reflectance, absorption, conductivity, or stability need to be balanced.",
-    fit: "Useful before committing to multilayer coating designs.",
-    examples: ["transparent films", "reflectance", "absorbers"],
+      "Thin films where transparency, reflectance, absorption, conductivity, stability, or photoresponse need to be balanced.",
+    fit: "Useful before committing to multilayer coating designs, photonic tests, or photoelectrochemical validation.",
+    examples: ["transparent films", "reflectance", "photoresponse"],
   },
   {
-    title: "Advanced packaging interfaces",
+    title: "Protective and packaging interfaces",
     description:
-      "Bonding layers, diffusion barriers, adhesion layers, surface layers, and interface materials.",
-    fit: "Useful when interface materials need to be narrowed before package-level reliability testing.",
-    examples: ["bonding layers", "diffusion barriers", "adhesion layers"],
+      "Bonding layers, diffusion barriers, adhesion layers, conductive protective surfaces, and interface materials.",
+    fit: "Useful when interface or surface-layer candidates need to be narrowed before hardware or package-level reliability testing.",
+    examples: ["bonding layers", "diffusion barriers", "conductive surfaces"],
   },
 ]
