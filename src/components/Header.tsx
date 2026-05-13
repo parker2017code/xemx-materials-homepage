@@ -47,7 +47,7 @@ export function Header() {
     >
       <div className="mx-auto flex w-full max-w-[1200px] min-w-0 items-center justify-between gap-3 px-6 py-4 lg:px-10 xl:px-16">
         <a href="#/" className="flex min-w-0 max-w-[220px] flex-col leading-none lg:min-w-[220px] lg:max-w-none" aria-label="xemX home">
-          <img src="/xemx-logo.svg" alt="" className="h-auto w-[82px]" aria-hidden="true" />
+          <img src="./xemx-logo.svg" alt="" className="h-auto w-[116px]" aria-hidden="true" />
           <span className="mt-1 truncate text-[0.68rem] font-medium uppercase leading-tight tracking-[0.14em] text-[#c3c3fa] lg:overflow-visible lg:whitespace-nowrap">
             materials space exploration
           </span>

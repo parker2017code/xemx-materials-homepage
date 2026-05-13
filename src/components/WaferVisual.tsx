@@ -47,11 +47,26 @@ export function WaferVisual() {
                 <stop offset="50%" stopColor="#0F766E" stopOpacity="0.15" />
                 <stop offset="100%" stopColor="#A16207" stopOpacity="0.12" />
               </linearGradient>
+              <clipPath id="waferClip">
+                <circle cx="105" cy="105" r="88" />
+              </clipPath>
             </defs>
             <circle cx="105" cy="105" r="88" fill="url(#waferGradient)" stroke="#CBD5E1" strokeWidth="1.5" />
             <circle cx="105" cy="105" r="88" fill="url(#waferSweep)" />
-            <path d="M32 151C75 122 128 117 178 137" fill="none" stroke="#1D4ED8" strokeOpacity="0.22" strokeWidth="12" />
-            <path d="M28 72C69 86 114 82 176 50" fill="none" stroke="#0F766E" strokeOpacity="0.14" strokeWidth="10" />
+            <g clipPath="url(#waferClip)" opacity="0.34">
+              <path d="M-8 154L154 -8" stroke="#2563EB" strokeWidth="18" strokeOpacity="0.13" />
+              {Array.from({ length: 9 }, (_, index) => {
+                const position = 41 + index * 16
+                return (
+                  <g key={position}>
+                    <path d={`M${position} 20V190`} stroke="#475569" strokeOpacity="0.16" strokeWidth="0.55" />
+                    <path d={`M20 ${position}H190`} stroke="#475569" strokeOpacity="0.16" strokeWidth="0.55" />
+                  </g>
+                )
+              })}
+              <circle cx="105" cy="105" r="54" fill="none" stroke="#2563EB" strokeOpacity="0.18" strokeWidth="0.8" />
+              <circle cx="105" cy="105" r="72" fill="none" stroke="#0F766E" strokeOpacity="0.14" strokeWidth="0.8" />
+            </g>
             {dots.map((dot, index) => (
               <circle
                 key={`${dot.x}-${dot.y}`}
