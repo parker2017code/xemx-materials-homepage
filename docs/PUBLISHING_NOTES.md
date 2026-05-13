@@ -7,6 +7,7 @@ Before publishing it as the main public site, run a separate launch pass for:
 - Branding: confirm the final CD Manual values. This preview now uses the available XemX SVG mark, Gantari, dark navy `#000030`, violet `#5f37f0`, sky `#9dc3fa`, and sharp UI geometry from the brand material available locally.
 - Contact route: replace the `mailto:` form with the real destination or form provider.
 - Claims: confirm public wording for numbers, facility access, partner support, and follow-up samples.
+- Context authority: for this preview, use the supplied positioning and literature context as the source of truth. Do not treat the existing public website as canonical copy or as a higher-priority claim source.
 - Navigation: decide whether the hash-routed preview becomes real paths such as `/capabilities`, `/methods`, `/applications`, and `/contact`.
 - SEO: write final titles, descriptions, canonical URLs, sitemap, and index rules.
 - Privacy: remove preview-only password gate decisions if this becomes the public homepage; keep private previews gated.
@@ -17,7 +18,7 @@ Before publishing it as the main public site, run a separate launch pass for:
 - Legal and compliance: add final imprint, privacy policy, terms, and contact/legal details required for a GmbH site.
 - Content approval: confirm application wording, validation boundaries, ecosystem support wording, and all technical method names.
 - Literature positioning: keep the public hierarchy centered on combinatorial thin-film material libraries, high-throughput characterization, measured composition-property maps, localized electrochemical screening, and data-guided iteration.
-- Current public-site proof points checked on 2026-05-13: 37 available elements, 342 compositions per campaign, up to 7 cathodes per run, and 100 mm single-wafer libraries.
+- Numeric proof points, such as wafer format, measured compositions, and co-sputtered element counts, should stay only where they are already part of the supplied review context or have been explicitly approved for public use.
 - Production deployment: decide between GitHub Pages, Netlify, Vercel, or another host with real access control for private staging.
 
 Current private-preview posture:
