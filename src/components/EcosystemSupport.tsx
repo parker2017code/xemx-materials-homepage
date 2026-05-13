@@ -14,7 +14,7 @@ const support = [
 
 export function EcosystemSupport() {
   return (
-    <section className="mx-auto max-w-[1200px] px-6 py-20 lg:px-10 lg:py-28 xl:px-16">
+    <section className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
       <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8 lg:p-10">
         <SectionHeader
           eyebrow="Extended project support"

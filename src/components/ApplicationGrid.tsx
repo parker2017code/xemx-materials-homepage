@@ -4,14 +4,14 @@ import { SectionHeader } from "./SectionHeader"
 
 export function ApplicationGrid() {
   return (
-    <section id="applications" className="mx-auto max-w-[1200px] px-6 py-20 lg:px-10 lg:py-28 xl:px-16">
+    <section id="applications" className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
       <SectionHeader
         eyebrow="Applications"
         title="Material questions we can help screen"
         description="Each area starts from a practical material question, with screening used before final device, cell, package, or hardware validation."
       />
 
-      <div className="mt-10 grid gap-5 md:grid-cols-2">
+      <div className="mt-8 grid gap-5 md:grid-cols-2">
         {applications.map((application, index) => (
           <motion.article
             key={application.title}

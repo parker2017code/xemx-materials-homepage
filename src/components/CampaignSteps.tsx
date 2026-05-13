@@ -4,14 +4,14 @@ import { SectionHeader } from "./SectionHeader"
 
 export function CampaignSteps() {
   return (
-    <section className="mx-auto max-w-[1200px] px-6 py-20 lg:px-10 lg:py-28 xl:px-16">
+    <section className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
       <SectionHeader
         eyebrow="Campaign workflow"
         title="From material question to measured map."
         description="A campaign starts with a practical question: which material region is worth testing next?"
       />
 
-      <div className="relative mt-12 grid gap-5 lg:grid-cols-2">
+      <div className="relative mt-9 grid gap-5 lg:grid-cols-2">
         <div className="pointer-events-none absolute left-1/2 top-8 hidden h-[calc(100%-4rem)] w-px -translate-x-1/2 bg-slate-200 lg:block" />
         {campaignSteps.map((step, index) => (
           <motion.article

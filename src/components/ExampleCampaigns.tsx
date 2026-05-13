@@ -5,14 +5,14 @@ import { SectionHeader } from "./SectionHeader"
 export function ExampleCampaigns() {
   return (
     <section id="campaign-examples" className="border-y border-slate-200 bg-white/70">
-      <div className="mx-auto max-w-[1200px] px-6 py-20 lg:px-10 lg:py-28 xl:px-16">
+      <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
         <SectionHeader
           eyebrow="Campaign examples"
-          title="Concrete screening questions, not pretend case studies."
+          title="Concrete screening questions with clear outputs."
           description="These examples show the format of a useful campaign: question, sample plan, measured output, and the next validation step."
         />
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-2">
+        <div className="mt-8 grid gap-5 lg:grid-cols-2">
           {campaigns.map((campaign, index) => {
             const rows = [
               ["Question", campaign.question],

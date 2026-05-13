@@ -3,7 +3,7 @@ import { decisionBrief, decisionConnectors } from "../data/decisionBrief"
 
 export function DecisionBrief() {
   return (
-    <section aria-label="Campaign decision flow" className="mx-auto max-w-[1200px] px-6 pb-16 lg:px-10 lg:pb-20 xl:px-16">
+    <section aria-label="Campaign decision flow" className="mx-auto max-w-[1200px] px-6 pb-14 lg:px-10 lg:pb-16 xl:px-16">
       <div className="rounded-[2rem] border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
         <div className="grid gap-3 lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:items-stretch">
           {decisionBrief.map((item, index) => {

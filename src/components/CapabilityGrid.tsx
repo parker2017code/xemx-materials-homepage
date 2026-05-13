@@ -36,14 +36,14 @@ const capabilityGroups = [
 export function CapabilityGrid() {
   return (
     <section id="capabilities" className="border-y border-slate-200 bg-white/70">
-      <div className="mx-auto max-w-[1200px] px-6 py-20 lg:px-10 lg:py-28 xl:px-16">
+      <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
         <SectionHeader
           eyebrow="Capabilities"
           title="What a xemX campaign can include"
           description="A campaign starts with the material decision, then selects the library design, measurements, and analysis needed to make that decision."
         />
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-2">
+        <div className="mt-8 grid gap-5 lg:grid-cols-2">
           {capabilityGroups.map((group, index) => {
             const Icon = group.icon
             return (

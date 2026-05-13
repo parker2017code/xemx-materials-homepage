@@ -12,7 +12,7 @@ const stages = [
 
 export function FitPipeline() {
   return (
-    <section id="fit" className="mx-auto max-w-[1200px] px-6 py-20 lg:px-10 lg:py-28 xl:px-16">
+    <section id="fit" className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
       <div className="rounded-[2rem] border border-blue-100 bg-blue-50/65 p-6 shadow-sm sm:p-8 lg:p-10">
         <SectionHeader
           eyebrow="Honest fit"
@@ -21,7 +21,7 @@ export function FitPipeline() {
         />
 
         <motion.div
-          className="mt-10 grid gap-3 lg:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr_auto_1fr] lg:items-center"
+          className="mt-8 grid gap-3 lg:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr_auto_1fr] lg:items-center"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}

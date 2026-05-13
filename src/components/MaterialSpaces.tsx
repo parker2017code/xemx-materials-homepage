@@ -38,14 +38,14 @@ const spaces = [
 
 export function MaterialSpaces() {
   return (
-    <section className="mx-auto max-w-[1200px] px-6 py-20 lg:px-10 lg:py-28 xl:px-16">
+    <section className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
       <SectionHeader
         eyebrow="Material spaces"
         title="Material spaces that fit this approach"
         description="These spaces fit when a physical library and measured property map can reduce the number of final-format tests."
       />
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {spaces.map((space, index) => (
           <motion.article
             key={space.title}

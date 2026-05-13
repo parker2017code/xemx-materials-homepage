@@ -16,7 +16,7 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="border-t border-slate-200 bg-white">
-      <div className="mx-auto grid max-w-[1200px] gap-10 px-6 py-20 lg:grid-cols-[0.85fr_1fr] lg:px-10 lg:py-28 xl:px-16">
+      <div className="mx-auto grid max-w-[1200px] gap-8 px-6 py-16 lg:grid-cols-[0.85fr_1fr] lg:px-10 lg:py-20 xl:px-16">
         <div>
           <SectionHeader
             eyebrow="Contact"

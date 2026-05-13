@@ -15,7 +15,7 @@ const methods = [
 export function MethodsPreview() {
   return (
     <section id="methods" className="border-y border-slate-200 bg-white/70">
-      <div className="mx-auto max-w-[1200px] px-6 py-20 lg:px-10 lg:py-28 xl:px-16">
+      <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1fr] lg:items-start">
           <SectionHeader
             eyebrow="Methods"

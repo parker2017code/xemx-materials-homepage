@@ -27,14 +27,14 @@ const cards = [
 
 export function ProblemCards() {
   return (
-    <section className="mx-auto max-w-[1200px] px-6 py-20 lg:px-10 lg:py-28 xl:px-16">
+    <section className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
       <SectionHeader
         eyebrow="The problem"
         title="Material development gets slow when every option needs its own test."
         description="Many R&D teams know the property they need, but not which composition, coating, interface, or process condition will get them there. Testing one material at a time is slow. Final validation is expensive. Literature and simulations can help, but they do not replace measured data from real samples."
       />
 
-      <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {cards.map((card, index) => {
           const Icon = card.icon
           return (
