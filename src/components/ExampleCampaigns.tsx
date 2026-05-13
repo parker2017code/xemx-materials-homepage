@@ -2,7 +2,14 @@ import { motion } from "framer-motion"
 import { campaigns } from "../data/campaigns"
 import { SectionHeader } from "./SectionHeader"
 
-export function ExampleCampaigns() {
+type ExampleCampaignsProps = {
+  limit?: number
+}
+
+export function ExampleCampaigns({ limit }: ExampleCampaignsProps) {
+  const visibleCampaigns = typeof limit === "number" ? campaigns.slice(0, limit) : campaigns
+  const isPreview = typeof limit === "number" && limit < campaigns.length
+
   return (
     <section id="campaign-examples" className="border-y border-slate-200 bg-white/70">
       <div className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
@@ -13,7 +20,7 @@ export function ExampleCampaigns() {
         />
 
         <div className="mt-8 grid gap-5 lg:grid-cols-2">
-          {campaigns.map((campaign, index) => {
+          {visibleCampaigns.map((campaign, index) => {
             const rows = [
               ["Question", campaign.question],
               ["Campaign", campaign.campaign],
@@ -44,6 +51,17 @@ export function ExampleCampaigns() {
             )
           })}
         </div>
+
+        {isPreview && (
+          <div className="mt-8">
+            <a
+              href="#examples"
+              className="inline-flex rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:border-blue-300 hover:text-blue-700"
+            >
+              View all campaign examples
+            </a>
+          </div>
+        )}
       </div>
     </section>
   )

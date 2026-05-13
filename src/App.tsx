@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { ApplicationsPage } from "./components/ApplicationsPage"
 import { ApplicationGrid } from "./components/ApplicationGrid"
-import { CampaignSteps } from "./components/CampaignSteps"
 import { CapabilityGrid } from "./components/CapabilityGrid"
 import { ContactSection } from "./components/ContactSection"
 import { DecisionBrief } from "./components/DecisionBrief"
@@ -11,9 +10,6 @@ import { FitPipeline } from "./components/FitPipeline"
 import { Footer } from "./components/Footer"
 import { Header } from "./components/Header"
 import { Hero } from "./components/Hero"
-import { EcosystemSupport } from "./components/EcosystemSupport"
-import { MaterialSpaces } from "./components/MaterialSpaces"
-import { MethodsPreview } from "./components/MethodsPreview"
 import { ProblemCards } from "./components/ProblemCards"
 import { WhatWeDo } from "./components/WhatWeDo"
 import { capabilityGroups, methodGroups } from "./data/siteInventory"
@@ -32,13 +28,9 @@ function HomePage() {
       <DecisionBrief />
       <ProblemCards />
       <WhatWeDo />
-      <CampaignSteps />
       <CapabilityGrid />
-      <MaterialSpaces />
       <ApplicationGrid />
-      <MethodsPreview />
-      <ExampleCampaigns />
-      <EcosystemSupport />
+      <ExampleCampaigns limit={2} />
       <FitPipeline />
       <ContactSection />
     </main>
