@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Gantari:wght@300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #111827;
-  background: #f8fafc;
+  font-family: Gantari, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #020219;
+  background: #f7f8ff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -21,8 +23,9 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 32rem),
-    #f8fafc;
+    radial-gradient(circle at top left, rgba(157, 195, 250, 0.28), transparent 32rem),
+    linear-gradient(180deg, rgba(0, 0, 48, 0.035), transparent 34rem),
+    #f7f8ff;
 }
 
 #root {
@@ -30,8 +33,19 @@ body {
 }
 
 ::selection {
-  background: #bfdbfe;
-  color: #111827;
+  background: #c3c3fa;
+  color: #000030;
+}
+
+:where(
+  .rounded,
+  .rounded-xl,
+  .rounded-2xl,
+  .rounded-3xl,
+  .rounded-full,
+  .rounded-\[2rem\]
+) {
+  border-radius: 3px !important;
 }
 
 @keyframes soft-pulse {

@@ -15,6 +15,7 @@ This site should be built as a durable static product surface, not a screenshot.
 - Start with the problem, user intent, constraints, risks, and success criteria before changing UI or code.
 - Build components as reusable systems, not one-off page art.
 - Use tokens for color, spacing, radius, shadow, and focus behavior where practical.
+- Follow the available XemX brand rules: stylized `xemX`, descriptor `materials space exploration`, Gantari, dark technical palette, and sharp UI geometry. The wafer itself can remain circular because it represents the physical sample.
 - Every interactive component needs visible focus and predictable keyboard behavior.
 - Forms need labels, required states, autocomplete, validation behavior, and a success/fallback path.
 - Mobile is not just a shrunken desktop layout. Dense sections must stack, wrap, and avoid horizontal overflow.

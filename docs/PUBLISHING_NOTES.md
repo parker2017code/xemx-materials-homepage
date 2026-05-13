@@ -4,6 +4,7 @@ This mockup is suitable for private review, not final public launch.
 
 Before publishing it as the main public site, run a separate launch pass for:
 
+- Branding: confirm the final CD Manual values. This preview now uses the available XemX SVG mark, Gantari, dark navy `#000030`, violet `#5f37f0`, sky `#9dc3fa`, and sharp UI geometry from the brand material available locally.
 - Contact route: replace the `mailto:` form with the real destination or form provider.
 - Claims: confirm public wording for numbers, facility access, partner support, and follow-up samples.
 - Navigation: decide whether the hash-routed preview becomes real paths such as `/capabilities`, `/methods`, `/applications`, and `/contact`.

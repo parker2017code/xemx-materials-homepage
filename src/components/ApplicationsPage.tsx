@@ -10,7 +10,7 @@ export function ApplicationsPage() {
           Material questions we can help screen.
         </h1>
         <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-600">
-          This page translates the campaign platform into practical markets without pretending xemX replaces final device, cell, hardware, or package validation.
+          Screening narrows material candidates before final device, cell, hardware, or package validation.
         </p>
       </section>
 

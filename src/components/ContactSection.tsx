@@ -61,7 +61,9 @@ export function ContactSection() {
               </label>
             ))}
             <label className="grid gap-2 text-sm font-semibold text-slate-800 sm:col-span-2">
-              Current testing bottleneck
+              <span>
+                Current testing bottleneck <span className="text-blue-700">*</span>
+              </span>
               <textarea
                 className="min-h-28 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-normal text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
                 name="current-testing-bottleneck"
@@ -69,7 +71,9 @@ export function ContactSection() {
               />
             </label>
             <label className="grid gap-2 text-sm font-semibold text-slate-800 sm:col-span-2">
-              What would make a useful screening result?
+              <span>
+                What would make a useful screening result? <span className="text-blue-700">*</span>
+              </span>
               <textarea
                 className="min-h-28 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-normal text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
                 name="useful-screening-result"
@@ -80,7 +84,7 @@ export function ContactSection() {
 
           {submitted && (
             <p className="mt-5 rounded-2xl border border-blue-100 bg-white px-4 py-3 text-sm leading-6 text-slate-600" role="status">
-              Your email client should open with the material question details. If it does not, send the same fields to info@xemx-materials.com.
+              Your email client opens with the material question details. If it does not open, send the same fields to info@xemx-materials.com.
             </p>
           )}
 
