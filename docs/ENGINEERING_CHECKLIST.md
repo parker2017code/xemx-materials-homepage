@@ -12,6 +12,7 @@ This site should be built as a durable static product surface, not a screenshot.
 
 ## Implementation Standard
 
+- Start with the problem, user intent, constraints, risks, and success criteria before changing UI or code.
 - Build components as reusable systems, not one-off page art.
 - Use tokens for color, spacing, radius, shadow, and focus behavior where practical.
 - Every interactive component needs visible focus and predictable keyboard behavior.
@@ -21,6 +22,8 @@ This site should be built as a durable static product surface, not a screenshot.
 - Motion must clarify and respect reduced-motion settings.
 - Public preview performance should stay simple: static HTML/CSS/SVG, limited JavaScript, no stock media, no heavy tracking scripts.
 - Privacy posture must be explicit: encrypted preview is acceptable for review, but real private staging needs host-level access control.
+- Prefer correctness, clarity, accessibility, security/privacy, performance, and maintainability over clever visual or code tricks.
+- Keep the system auditable: document tradeoffs, run checks, verify pushed commits, and verify live URLs when deploying.
 
 ## Before Public Launch
 
