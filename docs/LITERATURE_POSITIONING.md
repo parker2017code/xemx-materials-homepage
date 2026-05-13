@@ -1,6 +1,6 @@
 # Literature-Derived Positioning
 
-This preview should keep the hierarchy below unless later public-launch review changes the commercial scope. The supplied review context is the authority for this preview. Existing public website copy and third-party summaries are not higher-priority sources.
+This preview should keep the hierarchy below unless later public-launch review changes the commercial scope. The supplied review context is the authority for this preview. Current-site wording and third-party summaries are not higher-priority sources.
 
 xemX is best understood as an experimental materials search company, not a generic AI materials company, not a coatings shop, and not a full manufacturing or validation provider.
 

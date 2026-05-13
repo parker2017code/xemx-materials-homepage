@@ -9,7 +9,7 @@ This site should be built as a durable static product surface, not a screenshot.
 - Primary conversion: submit or send a material-question brief.
 - Secondary tasks: understand campaign logic, capabilities, methods, applications, example campaign shapes, and validation boundaries.
 - De-emphasize: pricing, generic AI/software positioning, generic coating-vendor catalog language, broad claims without a clear measured output.
-- Source of truth: the supplied review context and approved internal positioning outrank the current public website and any third-party summary. Existing public wording is not authoritative for this preview.
+- Source of truth: the supplied review context and approved internal positioning outrank current-site wording and third-party summaries. Do not import outside wording into this preview.
 - Literature-derived hierarchy: core library creation, high-throughput characterization, measured maps, localized electrochemical screening, and data-guided iteration. Application examples can be broad, but production scale-up, CO2 electroreduction, battery SEI or battery-interface claims, and final device/cell/fab validation stay out of the core promise unless confirmed for public use.
 
 ## Implementation Standard
