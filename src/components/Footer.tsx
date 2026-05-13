@@ -7,7 +7,7 @@ export function Footer() {
           <p className="mt-1 text-xs uppercase tracking-[0.18em] text-slate-400">materials space exploration</p>
         </div>
         <p className="max-w-xl leading-6">
-          Physical material libraries, direct measurements, and maps that help R&D teams choose what to validate next.
+          Experimental campaigns for material search problems: real libraries, measured maps, and clearer choices about what to validate next.
         </p>
       </div>
     </footer>

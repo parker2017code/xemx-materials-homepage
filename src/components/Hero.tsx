@@ -3,11 +3,11 @@ import { motion } from "framer-motion"
 import { WaferVisual } from "./WaferVisual"
 
 const proofChips = [
-  "Combinatorial libraries",
-  "Thin-film composition gradients",
-  "Automated characterization",
-  "Measured composition-property maps",
-  "Data-guided follow-up campaigns",
+  "Physical material libraries",
+  "Hundreds of measured points",
+  "Composition-property maps",
+  "Electrical, mechanical, optical, magnetic, and electrochemical screening",
+  "Data-guided follow-up",
 ]
 
 export function Hero() {
@@ -23,10 +23,10 @@ export function Hero() {
           Materials space exploration
         </p>
         <h1 className="max-w-4xl text-[2.45rem] font-semibold leading-[1.08] tracking-tight text-slate-950 sm:text-6xl lg:text-[4rem]">
-          Test hundreds of material variations before you choose what to validate.
+          Find the material regions worth testing next.
         </h1>
         <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl sm:leading-9">
-          xemX builds physical material libraries, measures the properties across them, and turns the results into maps that show which compositions are worth pursuing.
+          xemX designs experimental campaigns for large material search spaces. We create real material libraries, measure how properties change across them, and help R&D teams narrow candidates before expensive validation.
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">

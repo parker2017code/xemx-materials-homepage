@@ -12,9 +12,9 @@ const dots = Array.from({ length: 121 }, (_, index) => {
 
 function Metric({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3">
-      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-slate-400">{label}</p>
-      <p className="mt-1 text-sm font-semibold leading-snug text-slate-900">{value}</p>
+    <div className="min-h-[68px] rounded-2xl border border-blue-100 bg-blue-50/55 px-4 py-3 text-left">
+      <p className="text-[0.66rem] font-semibold uppercase tracking-[0.1em] text-blue-700">{label}</p>
+      <p className="mt-1 break-words text-sm font-semibold leading-snug text-slate-900">{value}</p>
     </div>
   )
 }
@@ -100,7 +100,7 @@ export function WaferVisual() {
         </div>
       </div>
 
-      <div className="mt-6 grid gap-3 sm:grid-cols-3">
+      <div className="mt-6 grid gap-3 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
         <Metric label="library" value="composition gradient" />
         <Metric label="output" value="measured map" />
         <Metric label="next" value="candidate regions" />

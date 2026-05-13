@@ -1,10 +1,10 @@
-import { Gauge, Layers3, SlidersHorizontal } from "lucide-react"
+import { BadgeEuro, Gauge, Layers3, SlidersHorizontal } from "lucide-react"
 import { motion } from "framer-motion"
 import { SectionHeader } from "./SectionHeader"
 
 const cards = [
   {
-    title: "Too many possible materials",
+    title: "Too many compositions",
     body: "Alloys, dopants, coatings, catalysts, and thin-film stacks create more options than most teams can test one by one.",
     icon: Layers3,
   },
@@ -14,9 +14,14 @@ const cards = [
     icon: Gauge,
   },
   {
-    title: "Hard tradeoffs",
+    title: "Several properties matter at once",
     body: "The best candidate for one property can fail on phase, texture, conductivity, stability, or process fit.",
     icon: SlidersHorizontal,
+  },
+  {
+    title: "Final format is too costly for blind exploration",
+    body: "Full devices, cells, coated parts, or package-level builds should test narrowed candidates, not every early idea.",
+    icon: BadgeEuro,
   },
 ]
 
@@ -29,7 +34,7 @@ export function ProblemCards() {
         description="Many R&D teams know the property they need, but not which composition, coating, interface, or process condition will get them there. Testing one material at a time is slow. Final validation is expensive. Literature and simulations can help, but they do not replace measured data from real samples."
       />
 
-      <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {cards.map((card, index) => {
           const Icon = card.icon
           return (

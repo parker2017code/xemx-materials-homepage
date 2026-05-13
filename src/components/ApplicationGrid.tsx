@@ -7,8 +7,8 @@ export function ApplicationGrid() {
     <section id="applications" className="mx-auto max-w-[1200px] px-6 py-20 lg:px-10 lg:py-28 xl:px-16">
       <SectionHeader
         eyebrow="Applications"
-        title="Where material libraries can narrow the search."
-        description="The same campaign logic can support thin films, interfaces, coatings, catalysts, and other material spaces where measured tradeoffs matter."
+        title="Material questions we can help screen"
+        description="Each application should be written as a practical material question, with final device, cell, package, or hardware validation kept in the right place."
       />
 
       <div className="mt-10 grid gap-5 md:grid-cols-2">

@@ -18,7 +18,7 @@ export const applications: Application[] = [
     title: "RF acoustic films",
     description:
       "AlN, AlScN, ScAlN, and related piezoelectric films where composition and texture affect device behavior.",
-    fit: "Useful when composition windows need to be selected before resonator-level validation.",
+    fit: "Useful when composition windows need to be selected before resonator-level validation remains with the customer.",
     examples: ["AlScN", "texture windows", "piezoelectric response"],
   },
   {
@@ -32,14 +32,14 @@ export const applications: Application[] = [
     title: "Protective coatings",
     description:
       "Coatings that need to balance hardness, durability, conductivity, optical behavior, or chemical stability.",
-    fit: "Useful when one property alone is not enough.",
+    fit: "Useful when one property alone is not enough, such as protection plus electrical behavior.",
     examples: ["hard films", "conductive coatings", "stable surfaces"],
   },
   {
     title: "Battery interfaces",
     description:
       "Thin coatings, current collector surfaces, solid-state battery interfaces, and protective layers.",
-    fit: "Useful for early screening before full cell testing.",
+    fit: "Useful for early screening before full cell validation.",
     examples: ["collector surfaces", "solid-state interfaces", "protective layers"],
   },
   {
@@ -60,7 +60,7 @@ export const applications: Application[] = [
     title: "Advanced packaging interfaces",
     description:
       "Bonding layers, diffusion barriers, adhesion layers, surface layers, and interface materials.",
-    fit: "Useful when interface materials need to be narrowed before reliability testing.",
+    fit: "Useful when interface materials need to be narrowed before package-level reliability testing.",
     examples: ["bonding layers", "diffusion barriers", "adhesion layers"],
   },
 ]

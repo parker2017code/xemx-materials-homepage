@@ -1,24 +1,30 @@
-import { Beaker, Map, ScanLine } from "lucide-react"
+import { Beaker, Map, ScanLine, Waypoints } from "lucide-react"
 import { motion } from "framer-motion"
 import { SectionHeader } from "./SectionHeader"
 
 const items = [
   {
     number: "01",
-    title: "Build the library",
-    body: "Create a real sample set where composition or process conditions change across the wafer or carrier.",
+    title: "Create material libraries",
+    body: "Build physical thin-film or coating libraries with many related material variations in one campaign.",
     icon: Beaker,
   },
   {
     number: "02",
-    title: "Measure the points",
-    body: "Characterize many positions so each region has measured property data tied to composition.",
+    title: "Measure what formed",
+    body: "Map composition, phase, structure, and surface behavior so each result is tied to a real material region.",
     icon: ScanLine,
   },
   {
     number: "03",
-    title: "Choose what to test next",
-    body: "Use the map to pick candidate regions, reject poor regions, and design the next smaller campaign.",
+    title: "Measure what matters",
+    body: "Add electrical, mechanical, optical, magnetic, or electrochemical screening depending on the material question.",
+    icon: Waypoints,
+  },
+  {
+    number: "04",
+    title: "Select what to test next",
+    body: "Rank regions, compare tradeoffs, and choose candidates for customer validation or follow-up samples.",
     icon: Map,
   },
 ]
@@ -30,8 +36,8 @@ export function WhatWeDo() {
         <div>
           <SectionHeader
             eyebrow="What xemX does"
-            title="xemX turns a large material search space into a measured map."
-            description="Instead of making one sample at a time, xemX creates a material library where composition changes across a single wafer or sample set. Each point is measured directly. The result is a map showing which material regions look promising, which fail, and what should be tested next."
+            title="xemX turns material search spaces into measured maps."
+            description="The campaign starts with the decision the customer needs to make: which material region is worth testing next, which candidates deserve expensive validation, and which composition-property tradeoffs matter."
           />
         </div>
 

@@ -3,12 +3,12 @@ import { useEffect, useState } from "react"
 import { cn } from "../lib/cn"
 
 const navItems = [
-  ["How it works", "#how-it-works"],
-  ["Capabilities", "#capabilities"],
-  ["Applications", "#applications"],
-  ["Campaign examples", "#campaign-examples"],
-  ["About", "#fit"],
-  ["Contact", "#contact"],
+  ["Home", "#/"],
+  ["Capabilities", "#/capabilities"],
+  ["Methods", "#/methods"],
+  ["Applications", "#/applications"],
+  ["Examples", "#/examples"],
+  ["Contact", "#/contact"],
 ]
 
 export function Header() {
@@ -30,14 +30,14 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4 lg:px-10 xl:px-16">
-        <a href="#top" className="flex flex-col leading-none" aria-label="xemX home">
+        <a href="#/" className="flex flex-col leading-none" aria-label="xemX home">
           <span className="text-xl font-semibold tracking-tight text-slate-950">xemX</span>
           <span className="mt-1 text-[0.72rem] font-medium uppercase tracking-[0.18em] text-slate-500">
             materials space exploration
           </span>
         </a>
 
-        <nav className="hidden items-center gap-6 text-sm font-medium text-slate-600 lg:flex">
+        <nav className="hidden items-center gap-5 text-sm font-medium text-slate-600 lg:flex">
           {navItems.map(([label, href]) => (
             <a key={href} href={href} className="transition hover:text-blue-700">
               {label}
@@ -47,7 +47,7 @@ export function Header() {
 
         <div className="hidden lg:block">
           <a
-            href="#contact"
+            href="#/contact"
             className="rounded-full bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-800"
           >
             Discuss a campaign
@@ -78,7 +78,7 @@ export function Header() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="#/contact"
               className="mt-3 rounded-full bg-blue-700 px-5 py-3 text-center font-semibold text-white"
               onClick={() => setOpen(false)}
             >

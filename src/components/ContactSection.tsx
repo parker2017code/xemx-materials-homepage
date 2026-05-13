@@ -7,6 +7,7 @@ const fields = [
   { label: "Email", type: "email", name: "email" },
   { label: "Material system", type: "text", name: "material-system" },
   { label: "Target property", type: "text", name: "target-property" },
+  { label: "Current testing method", type: "text", name: "current-testing-method" },
 ]
 
 export function ContactSection() {
