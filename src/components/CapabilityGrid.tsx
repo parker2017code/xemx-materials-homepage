@@ -27,7 +27,7 @@ const capabilityGroups = [
   {
     title: "Extended project support",
     description:
-      "Selected projects can connect to broader Bochum-based characterization, microscopy, interface analysis, localized electrochemistry, micro/nano-fabrication, and data-analysis resources.",
+      "Broader Bochum-based characterization, microscopy, interface analysis, localized electrochemistry, micro/nano-fabrication, and data-analysis resources support deeper follow-up when the material map points to candidate regions.",
     icon: Network,
     items: ["microscopy", "interface analysis", "localized electrochemistry", "micro/nano-fabrication"],
   },
