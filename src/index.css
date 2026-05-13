@@ -19,9 +19,14 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 32rem),
     #f8fafc;
+}
+
+#root {
+  overflow-x: clip;
 }
 
 ::selection {

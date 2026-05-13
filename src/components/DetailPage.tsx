@@ -20,7 +20,7 @@ type DetailPageProps = {
 
 export function DetailPage({ eyebrow, title, description, groups }: DetailPageProps) {
   return (
-    <main>
+    <main id="main-content" tabIndex={-1}>
       <section className="mx-auto max-w-[1200px] px-6 pb-12 pt-16 lg:px-10 lg:pt-20 xl:px-16">
         <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">{eyebrow}</p>
         <h1 className="max-w-4xl text-[2.4rem] font-semibold leading-[1.08] tracking-tight text-slate-950 sm:text-6xl">

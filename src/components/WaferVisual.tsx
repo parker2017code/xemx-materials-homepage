@@ -21,16 +21,17 @@ function Metric({ label, value }: { label: string; value: string }) {
 
 export function WaferVisual() {
   return (
-    <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-5 shadow-soft sm:p-7">
-      <div className="absolute right-6 top-6 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
-        real samples
-      </div>
-
-      <div className="grid gap-6 lg:grid-cols-[1.05fr_0.75fr] lg:items-end">
-        <div>
+    <div className="relative w-full min-w-0 overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-5 shadow-soft sm:p-7">
+      <div className="grid min-w-0 gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.75fr)] lg:items-end">
+        <div className="min-w-0">
+          <div className="flex justify-center sm:justify-start">
+            <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+              real samples
+            </span>
+          </div>
           <svg
             viewBox="0 0 210 210"
-            className="mx-auto mt-8 h-auto w-full max-w-[320px]"
+            className="mx-auto mt-4 h-auto w-full max-w-[320px]"
             role="img"
             aria-label="Wafer library with gradient and measured points"
           >
@@ -69,10 +70,10 @@ export function WaferVisual() {
           </svg>
         </div>
 
-        <div className="rounded-3xl border border-slate-200 bg-slate-50 p-4">
-          <div className="flex items-center justify-between gap-3">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">composition-property map</p>
-            <span className="rounded-full bg-white px-2.5 py-1 text-[0.68rem] font-semibold text-blue-700">screened</span>
+        <div className="min-w-0 rounded-3xl border border-slate-200 bg-slate-50 p-4">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <p className="min-w-0 text-xs font-semibold uppercase leading-5 tracking-[0.16em] text-slate-500">composition-property map</p>
+            <span className="shrink-0 rounded-full bg-white px-2.5 py-1 text-[0.68rem] font-semibold text-blue-700">screened</span>
           </div>
           <div className="mt-5 grid grid-cols-8 gap-1.5">
             {Array.from({ length: 48 }, (_, index) => {
