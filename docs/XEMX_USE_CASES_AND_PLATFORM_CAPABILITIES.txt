@@ -1,11 +1,11 @@
-XEMX USE CASES AND PLATFORM CAPABILITIES
+XEMX USE CASES AND EXPERIMENTAL CAPABILITIES
 Working inventory for review. This is not automatically public-approved copy.
 
 Purpose
-This document collects the broad possible use-case surface and the platform
-specification/capability surface from the current local XemX materials site
-source. It is written as a practical inventory: what the platform can talk
-about, what a campaign can do, and what needs approval before public launch.
+This document collects the broad possible use-case surface and the experimental
+capability surface from the current local XemX materials site source. It is a
+practical inventory: what XemX can talk about, what a campaign can do, and what
+needs approval before public launch.
 
 Core positioning
 xemX is best understood as an experimental materials search company.
@@ -27,8 +27,8 @@ production validation happen after screening.
 
 1.1 Electrocatalyst discovery
 Potential material questions:
-- Which mixed-metal or complex-solid-solution surface gives useful activity
-  and stability for the chosen reaction?
+- Which mixed-metal surface gives the activity and stability profile worth
+  repeating under the customer test protocol?
 - Which catalyst or electrode material region should be repeated or refined?
 - Which composition regions show promising local activity or surface response?
 
@@ -115,8 +115,8 @@ Boundary:
 
 1.4 Semiconductor thin films
 Potential material questions:
-- Which W, Mo, Ru, or related thin-film region gives useful electrical
-  resistance at thin-film thickness?
+- Which W, Mo, Ru, or related thin-film region keeps resistivity low enough at
+  the target thickness?
 - Which barrier, liner, cap, contact, gate-insulator-adjacent oxide, or memory
   stack material should move into device-level testing?
 - Which composition, phase, resistivity, or texture window is worth narrowing?
@@ -170,8 +170,8 @@ Boundary:
 
 1.6 Magnetic thin films
 Potential material questions:
-- Which composition regions show useful magnetic response while keeping the
-  needed phase and structure?
+- Which composition regions reach the target magnetic response while keeping
+  the needed phase and structure?
 - Which magnetic multilayer or reduced-rare-earth direction deserves deeper
   stack-specific validation?
 
@@ -266,8 +266,8 @@ These are not separate industries as much as reusable decision patterns:
 
 2.1 Low-resistance thin films
 Category: semiconductor materials.
-Question: which W, Mo, Ru, or related composition region gives useful
-electrical resistance at thin-film thickness?
+Question: which W, Mo, Ru, or related thin-film region keeps resistivity low
+enough at the target thickness?
 Campaign: map composition, phase, texture, and resistivity across a thin-film
 library.
 Output: candidate regions for customer-specific process or device validation.
@@ -284,8 +284,8 @@ Next step: transfer best windows into customer device stacks.
 
 2.3 Electrocatalyst composition search
 Category: localized electrochemistry.
-Question: which mixed-metal or complex-solid-solution surface gives useful
-activity and stability for the chosen reaction?
+Question: which mixed-metal surface gives the activity and stability profile
+worth repeating under the customer test protocol?
 Campaign: prepare catalyst material libraries and run localized electrochemical
 measurements.
 Output: measured activity map with regions to repeat or refine.
@@ -322,8 +322,8 @@ Next step: build a smaller validation set around the best tradeoff region.
 
 2.7 Magnetic thin-film screening
 Category: magnetic materials.
-Question: which composition regions show useful magnetic response while keeping
-the needed phase and structure?
+Question: which composition regions reach the target magnetic response while
+keeping the needed phase and structure?
 Campaign: screen composition, structure, and magnetic behavior across a
 thin-film material library.
 Output: magnetic response map tied to composition and phase data.
@@ -341,10 +341,10 @@ Next step: prepare follow-up films for customer coating or photonic test
 structures.
 
 
-3. PLATFORM SPECIFICATIONS
+3. EXPERIMENTAL CAPABILITIES
 
 3.1 Physical library creation
-Core platform capabilities:
+Core experimental capabilities:
 - Combinatorial thin-film material libraries.
 - Composition-spread thin-film libraries.
 - 100 mm wafer library format.
@@ -420,17 +420,19 @@ Plain meaning:
 - Mechanical screening compares hardness and stiffness.
 - Optical screening maps reflectance, absorption, transparency, or optical
   response.
-- Magnetic screening shows useful magnetic behavior across composition space.
+- Magnetic screening shows where the target magnetic behavior appears across
+  composition space.
 - Local electrochemical screening compares activity, stability, and surface
   behavior across many compositions.
 
 
-3.3 Campaign intelligence and data analysis
+3.3 Choosing the next experiment
 Core analysis capabilities:
 - Campaign design around the material question.
 - Composition-property maps.
 - Multi-property tradeoff comparison.
-- Pareto-style or multi-objective comparison where useful.
+- Pareto-style or multi-objective comparison when the project has several
+  target properties.
 - Data-guided iteration.
 - Active learning.
 - Gaussian-process measurement selection.
@@ -447,16 +449,15 @@ Support analysis capabilities:
 - Modeling and data analysis support for campaign design and interpretation.
 
 Plain meaning:
-- The customer is not buying a random measurement menu.
-- The value is in designing the screen, comparing tradeoffs, and choosing the
-  next experiment.
+- The value is the campaign design: choose the material space, measure the right
+  properties, compare tradeoffs, and decide what to test next.
 - The first measured map can guide the next measurement, sample, or campaign.
 - Software can help interpret large data sets, but the core output remains
   measured data from real samples.
 
 
-3.4 Extended project support
-Potential support routes:
+3.4 Follow-up support when needed
+Potential follow-up options:
 - Broader characterization support.
 - Bochum-based characterization routes.
 - Microscopy support.
@@ -469,8 +470,8 @@ Potential support routes:
 - Partner-supported scale-up or manufacturing transfer, if approved.
 
 Boundary:
-- These should be described as support routes, not as the core homepage
-  promise, unless XemX leadership explicitly approves stronger wording.
+- These are follow-up options, not guaranteed parts of every campaign. Confirm
+  availability and project scope before listing them in a proposal.
 
 
 4. MATERIAL SPACES AND PROPERTIES
@@ -606,4 +607,3 @@ Examples:
   composition, and phase before device-level testing.
 - We test coating libraries to measure resistance, mechanical response, and
   stability before hardware reliability testing.
-

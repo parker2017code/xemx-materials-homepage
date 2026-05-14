@@ -16,7 +16,7 @@ export function ExampleCampaigns({ limit }: ExampleCampaignsProps) {
         <SectionHeader
           eyebrow="Campaign examples"
           title="Concrete screening questions with clear outputs."
-          description="These examples show the format of a useful campaign: question, sample plan, measured output, and the next validation step."
+          description="These examples show the campaign format: question, sample plan, measured output, and the next validation step."
         />
 
         <div className="mt-8 grid gap-5 lg:grid-cols-2">

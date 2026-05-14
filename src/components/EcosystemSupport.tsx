@@ -17,9 +17,9 @@ export function EcosystemSupport() {
     <section className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
       <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8 lg:p-10">
         <SectionHeader
-          eyebrow="Extended project support"
+          eyebrow="Follow-up support"
           title="Broader support when a material map needs deeper follow-up"
-          description="Some campaigns benefit from deeper follow-up after the first material map. Bochum-based characterization, microscopy, microfabrication, interface analysis, localized electrochemistry, and data-analysis expertise can support that work."
+          description="Some campaigns need deeper follow-up after the first material map. Bochum-based characterization, microscopy, microfabrication, interface analysis, localized electrochemistry, and data-analysis expertise can support that work."
         />
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -38,7 +38,7 @@ export function EcosystemSupport() {
         </div>
 
         <p className="mt-6 max-w-4xl text-sm leading-6 text-slate-500">
-          These routes sit downstream of the core screening campaign and help explain or prepare selected candidate regions.
+          These follow-up options sit downstream of the core screening campaign. Confirm availability and project scope before listing them in a proposal.
         </p>
       </div>
     </section>

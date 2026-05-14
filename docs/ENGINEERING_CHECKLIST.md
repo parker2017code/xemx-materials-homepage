@@ -5,10 +5,10 @@ This site should be built as a durable static product surface, not a screenshot.
 ## Current User Intent
 
 - Primary user: R&D, materials, semiconductor, electrochemistry, coating, or interface teams with too many material variants to test one by one.
-- Primary task: explain the material question and ask whether a screening campaign is useful.
+- Primary task: explain the material question and decide whether a screening campaign can narrow the next test.
 - Primary conversion: submit or send a material-question brief.
 - Secondary tasks: understand campaign logic, capabilities, methods, applications, example campaign shapes, and validation boundaries.
-- De-emphasize: pricing, generic AI/software positioning, generic coating-vendor catalog language, broad claims without a clear measured output.
+- De-emphasize: pricing, generic AI/software positioning, coating-vendor catalog language, and broad claims without a measured output.
 - Source of truth: the supplied review context and approved internal positioning outrank current-site wording and third-party summaries. Do not import outside wording into this preview.
 - Literature-derived hierarchy: core library creation, high-throughput characterization, measured maps, localized electrochemical screening, and data-guided iteration. Application examples can be broad, but production scale-up, CO2 electroreduction, battery SEI or battery-interface claims, and final device/cell/fab validation stay out of the core promise unless confirmed for public use.
 
@@ -24,7 +24,7 @@ This site should be built as a durable static product surface, not a screenshot.
 - Content must survive long words, long labels, missing optional values, and translated text.
 - Motion must clarify and respect reduced-motion settings.
 - Public preview performance should stay simple: static HTML/CSS/SVG, limited JavaScript, no stock media, no heavy tracking scripts.
-- Privacy posture must be explicit: encrypted preview is acceptable for review, but real private staging needs host-level access control.
+- Privacy posture must be explicit: encrypted preview is acceptable for review. Real private staging needs host-level access control.
 - Prefer correctness, clarity, accessibility, security/privacy, performance, and maintainability over clever visual or code tricks.
 - Keep the system auditable: document tradeoffs, run checks, verify pushed commits, and verify live URLs when deploying.
 
@@ -43,5 +43,5 @@ This site should be built as a durable static product surface, not a screenshot.
 
 - The preview uses client-side hash routing for easy static deployment.
 - The contact form is static and opens email; production needs a real submission path.
-- The encrypted preview hides app content from ordinary crawlers, but the current GitHub Pages serving repo must remain public unless staging moves to a host with real access control.
+- The encrypted preview hides app content from ordinary crawlers. The current GitHub Pages serving repo must remain public unless staging moves to a host with real access control.
 - The source app repo is private; the deployed encrypted preview file is public because GitHub Pages requires it in this setup.

@@ -28,7 +28,7 @@ export function ContactSection() {
               <Mail className="h-5 w-5" />
             </div>
             <p className="mt-4 text-sm leading-6 text-slate-600">
-              The first useful exchange is usually a short description of the material family, the property target, and the current test bottleneck.
+              The first exchange should name the material family, the property target, and the current test bottleneck.
             </p>
           </div>
         </div>
@@ -72,11 +72,11 @@ export function ContactSection() {
             </label>
             <label className="grid gap-2 text-sm font-semibold text-slate-800 sm:col-span-2">
               <span>
-                What would make a useful screening result? <span className="text-blue-700">*</span>
+                What result would change the next experiment? <span className="text-blue-700">*</span>
               </span>
               <textarea
                 className="min-h-28 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-normal text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
-                name="useful-screening-result"
+                name="next-experiment-result"
                 required
               />
             </label>

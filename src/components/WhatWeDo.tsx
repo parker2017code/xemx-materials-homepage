@@ -36,8 +36,8 @@ export function WhatWeDo() {
         <div>
           <SectionHeader
             eyebrow="What xemX does"
-            title="xemX turns material search spaces into measured maps."
-            description="xemX makes physical material libraries, measures many related variations, and turns the results into maps that show which material regions are worth testing next."
+            title="xemX makes measured maps for material decisions."
+            description="xemX makes physical material libraries, measures related variations, and shows which material regions should be tested again."
           />
         </div>
 

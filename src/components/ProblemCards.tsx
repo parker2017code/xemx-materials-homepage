@@ -9,18 +9,18 @@ const cards = [
     icon: Layers3,
   },
   {
-    title: "Expensive final validation",
-    body: "Device-level tests, long qualification runs, and full stack builds cost too much to use as the first filter.",
+    title: "Validation is expensive",
+    body: "Device-level tests, long qualification runs, and full stack builds should start from narrowed candidates.",
     icon: Gauge,
   },
   {
     title: "Several properties matter at once",
-    body: "The best candidate for one property can fail on phase, texture, conductivity, stability, or process fit.",
+    body: "A usable candidate has to keep phase, texture, conductivity, stability, process fit, and the target property within range.",
     icon: SlidersHorizontal,
   },
   {
-    title: "Final format is too costly for blind exploration",
-    body: "Full devices, cells, coated parts, or package-level builds are better used on narrowed candidates, not every early idea.",
+    title: "Full builds come later",
+    body: "Full devices, cells, coated parts, and package-level builds make sense after the early screen removes weak regions.",
     icon: BadgeEuro,
   },
 ]
@@ -31,7 +31,7 @@ export function ProblemCards() {
       <SectionHeader
         eyebrow="The problem"
         title="Material development gets slow when every option needs its own test."
-        description="Many R&D teams have too many possible material choices to test one by one. Compositions, dopants, coatings, thin-film stacks, process conditions, surface chemistries, and interfaces can all change performance."
+        description="R&D teams often know the target property. The hard part is choosing the composition, dopant, coating, thin-film stack, surface chemistry, interface, or process condition worth testing next."
       />
 
       <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">

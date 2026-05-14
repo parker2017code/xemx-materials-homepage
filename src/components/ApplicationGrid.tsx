@@ -8,7 +8,7 @@ export function ApplicationGrid() {
       <SectionHeader
         eyebrow="Applications"
         title="Places where the campaign method can fit"
-        description="These are example material questions, not promises to replace final device, cell, stack, package, or production validation."
+        description="These examples show where screening can help before device, cell, stack, package, or production validation."
       />
 
       <div className="mt-8 grid gap-5 md:grid-cols-2">

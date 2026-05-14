@@ -12,7 +12,7 @@ export const campaigns: Campaign[] = [
     title: "Low-resistance thin films",
     category: "Semiconductor materials",
     question:
-      "Which W, Mo, Ru, or related composition region gives useful electrical resistance at thin-film thickness?",
+      "Which W, Mo, Ru, or related thin-film region keeps resistivity low enough at the target thickness?",
     campaign:
       "Map composition, phase, texture, and resistivity across a thin-film library.",
     output: "Candidate regions for customer-specific process or device validation.",
@@ -32,7 +32,7 @@ export const campaigns: Campaign[] = [
     title: "Electrocatalyst composition search",
     category: "Localized electrochemistry",
     question:
-      "Which mixed-metal or complex-solid-solution surface gives useful activity and stability for the chosen reaction?",
+      "Which mixed-metal surface gives the activity and stability profile worth repeating under the customer test protocol?",
     campaign:
       "Prepare a catalyst material library and run localized electrochemical measurements across the sample.",
     output: "Measured activity map with regions to repeat or refine.",
@@ -72,7 +72,7 @@ export const campaigns: Campaign[] = [
     title: "Magnetic thin-film screening",
     category: "Magnetic materials",
     question:
-      "Which composition regions show useful magnetic response while keeping the needed phase and structure?",
+      "Which composition regions reach the target magnetic response while keeping the needed phase and structure?",
     campaign:
       "Screen composition, structure, and magnetic behavior across a thin-film material library.",
     output: "Magnetic response map tied to composition and phase data.",

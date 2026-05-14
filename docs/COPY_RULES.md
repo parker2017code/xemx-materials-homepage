@@ -8,7 +8,7 @@ For each application or capability, say what someone is testing, measuring, buyi
 
 Weak:
 
-> We support advanced process integration for next-generation device architectures.
+> We support advanced process integration for device architectures.
 
 Better:
 

@@ -22,6 +22,8 @@ Preferred style:
 - Name the actor, action, evidence, status, missing piece, and consequence.
 - Avoid motivational, manifesto, brochure, or thought-leadership phrasing.
 - Keep product claims tied to a real user, workflow, proof point, or operational requirement.
+- For XemX public copy, avoid generic SaaS headings and claims such as `platform capabilities`, `technology overview`, `where the platform applies`, `complete picture`, `any problem`, and `start a conversation`. Use the buyer's words instead: material system, target property, current test bottleneck, measured output, wafer position, composition range, and next validation step.
+- Avoid repeated framework nouns when a concrete object is available. Prefer wafer, composition range, XRD map, resistivity data, accepted txid, wallet prompt, receipt, local reject, or validation sample over vague route/lane/path/story language.
 
 ## Required Check
 

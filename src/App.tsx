@@ -82,8 +82,8 @@ export default function App() {
     page = (
       <DetailPage
         eyebrow="Capabilities"
-        title="The full campaign capability model."
-        description="xemX capabilities are grouped by the work they do in a campaign: creating the material library, measuring the right properties, interpreting the map, and supporting deeper follow-up."
+        title="What a xemX campaign can include."
+        description="A campaign usually has four parts: make the library, measure the material, compare the results, and prepare the next validation step."
         groups={capabilityGroups}
       />
     )
@@ -93,8 +93,8 @@ export default function App() {
     page = (
       <DetailPage
         eyebrow="Methods"
-        title="The tools behind the campaign."
-        description="The methods page explains the technical routes used to create libraries, measure properties, and turn results into a usable material map."
+        title="Methods used to make and measure the libraries."
+        description="xemX uses co-sputtered thin-film libraries, automated measurements, and data analysis to connect composition with properties."
         groups={methodGroups}
       />
     )

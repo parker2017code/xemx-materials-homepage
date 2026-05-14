@@ -12,9 +12,9 @@ export type DetailGroup = {
 
 export const capabilityGroups: DetailGroup[] = [
   {
-    title: "Core campaign platform",
+    title: "Core experimental campaign",
     intro:
-      "The physical campaign layer: real libraries, composition gradients, sputtering routes, and follow-up samples where the screen points to a useful region.",
+      "Physical libraries, composition gradients, sputtering routes, and follow-up samples when the screen finds a region worth preparing again.",
     items: [
       {
         name: "Combinatorial thin-film material libraries",
@@ -55,7 +55,7 @@ export const capabilityGroups: DetailGroup[] = [
       {
         name: "Metals, alloys, nitrides, and oxides",
         status: "core",
-        plain: "The practical material universe includes several thin-film families.",
+        plain: "Campaigns can cover several thin-film families.",
       },
       {
         name: "Follow-on uniform depositions",
@@ -66,7 +66,7 @@ export const capabilityGroups: DetailGroup[] = [
     ],
   },
   {
-    title: "Measurement stack",
+    title: "Campaign measurements",
     intro:
       "The measurement plan changes with the decision: what formed, how properties changed, and where tradeoffs appear.",
     items: [
@@ -85,7 +85,7 @@ export const capabilityGroups: DetailGroup[] = [
       {
         name: "Electrical screening",
         status: "core",
-        plain: "Measures useful conductivity or resistivity behavior across the material space.",
+        plain: "Measures whether conductivity or resistivity falls inside the target range.",
         technical: "Four-point probe, sheet resistance, resistivity.",
       },
       {
@@ -103,7 +103,7 @@ export const capabilityGroups: DetailGroup[] = [
       {
         name: "Magnetic screening",
         status: "core",
-        plain: "Shows where useful magnetic behavior appears across a composition space.",
+        plain: "Shows where magnetic response meets the target behavior across a composition space.",
         technical: "MOKE magnetic characterization.",
       },
       {
@@ -121,9 +121,9 @@ export const capabilityGroups: DetailGroup[] = [
     ],
   },
   {
-    title: "Campaign intelligence",
+    title: "Choosing the next experiment",
     intro:
-      "The customer is not buying a random measurement menu. The value is in designing the screen, comparing tradeoffs, and choosing the next test.",
+      "A campaign is designed around a decision: which tradeoffs matter, which regions fail, and which sample should be tested next.",
     items: [
       {
         name: "Campaign design",
@@ -140,7 +140,7 @@ export const capabilityGroups: DetailGroup[] = [
         name: "Multi-property tradeoff comparison",
         status: "core",
         plain: "Compare cases where conductivity, phase, hardness, optical response, magnetics, activity, or stability matter together.",
-        technical: "Pareto-style or multi-objective comparison where useful.",
+        technical: "Pareto-style or multi-objective comparison when the project has several target properties.",
       },
       {
         name: "Data-guided iteration",
@@ -157,7 +157,7 @@ export const capabilityGroups: DetailGroup[] = [
     ],
   },
   {
-    title: "Extended project support",
+    title: "Follow-up support when needed",
     intro:
       "Broader follow-up routes are available when a campaign needs deeper characterization, fabrication support, or interface analysis.",
     items: [

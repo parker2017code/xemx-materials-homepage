@@ -15,9 +15,9 @@ export function FitPipeline() {
     <section id="fit" className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
       <div className="rounded-[2rem] border border-blue-100 bg-blue-50/65 p-6 shadow-sm sm:p-8 lg:p-10">
         <SectionHeader
-          eyebrow="Honest fit"
-          title="Where xemX fits in the R&D chain"
-          description="xemX is strongest before expensive final validation. A campaign can narrow a large material space, compare tradeoffs, and show which candidates deserve deeper testing."
+          eyebrow="Fit"
+          title="Where a campaign helps"
+          description="Use xemX before full validation, when the material space is still too large and the next test is expensive."
         />
 
         <motion.div
