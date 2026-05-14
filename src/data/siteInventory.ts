@@ -31,7 +31,7 @@ export const capabilityGroups: DetailGroup[] = [
       {
         name: "Hundreds of measured points",
         status: "core",
-        plain: "The customer gets a measured map, not just a handful of isolated samples.",
+        plain: "The customer gets a measured map across related samples.",
         technical: "Measured positions are reported with composition and property context.",
       },
       {
@@ -55,7 +55,7 @@ export const capabilityGroups: DetailGroup[] = [
       {
         name: "Metals, alloys, nitrides, and oxides",
         status: "core",
-        plain: "The practical material universe includes several thin-film families, not only one class.",
+        plain: "The practical material universe includes several thin-film families.",
       },
       {
         name: "Follow-on uniform depositions",

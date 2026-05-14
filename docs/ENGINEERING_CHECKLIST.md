@@ -20,7 +20,7 @@ This site should be built as a durable static product surface, not a screenshot.
 - Follow the available XemX brand rules: stylized `xemX`, descriptor `materials space exploration`, Gantari, dark technical palette, and sharp UI geometry. The wafer itself can remain circular because it represents the physical sample.
 - Every interactive component needs visible focus and predictable keyboard behavior.
 - Forms need labels, required states, autocomplete, validation behavior, and a success/fallback path.
-- Mobile is not just a shrunken desktop layout. Dense sections must stack, wrap, and avoid horizontal overflow.
+- Mobile needs its own layout path. Dense sections must stack, wrap, and avoid horizontal overflow.
 - Content must survive long words, long labels, missing optional values, and translated text.
 - Motion must clarify and respect reduced-motion settings.
 - Public preview performance should stay simple: static HTML/CSS/SVG, limited JavaScript, no stock media, no heavy tracking scripts.
