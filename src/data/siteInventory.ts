@@ -43,7 +43,7 @@ export const capabilityGroups: DetailGroup[] = [
       {
         name: "Multicomponent material spaces",
         status: "core",
-        plain: "Campaigns can explore more than simple binary systems when the question requires it.",
+        plain: "Campaigns can explore ternary and higher-order systems when the question requires them.",
         technical: "Element sets and source configurations are chosen around the material question.",
       },
       {
