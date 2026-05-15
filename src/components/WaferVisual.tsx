@@ -22,16 +22,16 @@ function Metric({ label, value }: { label: string; value: string }) {
 export function WaferVisual() {
   return (
     <div className="relative w-full min-w-0 overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-5 shadow-soft sm:p-7">
-      <div className="grid min-w-0 gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.75fr)] lg:items-end">
-        <div className="min-w-0">
-          <div className="flex justify-center sm:justify-start">
+      <div className="grid min-w-0 gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.75fr)] lg:items-start">
+        <div className="min-w-0 rounded-3xl border border-slate-100 bg-slate-50/60 p-4">
+          <div className="flex justify-center">
             <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
               real samples
             </span>
           </div>
           <svg
             viewBox="0 0 210 210"
-            className="mx-auto mt-4 h-auto w-full max-w-[320px]"
+            className="mx-auto mt-4 h-auto w-full max-w-[300px]"
             role="img"
             aria-label="Wafer library with gradient and measured points"
           >
