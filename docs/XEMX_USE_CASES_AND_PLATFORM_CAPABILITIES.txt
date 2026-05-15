@@ -1,70 +1,315 @@
 XEMX USE CASES AND EXPERIMENTAL CAPABILITIES
-Working inventory for review. This is not automatically public-approved copy.
+Authoritative guide for site and proposal editing. This is source material,
+not finished public copy.
 
 Purpose
-This document collects the broad possible use-case surface and the experimental
-capability surface from the current local XemX materials site source. It is a
-practical inventory: what XemX can talk about, what a campaign can do, and what
-needs approval before public launch.
+This guide defines what the XemX website may say, what should stay on detail
+pages, and what still needs project-specific wording. It uses the local XemX
+repo as the content authority, then checks that surface against the literature
+from Lars Banko, Alfred Ludwig, Wolfgang Schuhmann, Ruhr University Bochum, and
+ZGH-related work.
+
+Authority order
+1. Local XemX files in this repo.
+2. Literature with direct XemX, Banko, Ludwig, or Schuhmann involvement.
+3. General Ruhr University Bochum and ZGH capability evidence.
+4. Public company pages only as obsolete background, since this repo is
+   replacing that surface.
 
 Core positioning
-xemX is best understood as an experimental materials search company.
-The core job is:
-- Create physical material libraries where composition changes across a wafer
-  or sample set.
+xemX runs measured materials screening campaigns.
+
+The core job:
+- Create physical thin-film material libraries where composition changes
+  across a wafer or sample set.
 - Measure many real material variants.
-- Return measured composition-property maps.
-- Help R&D teams decide which material regions deserve expensive validation.
+- Return composition-property maps.
+- Help R&D teams choose smaller validation sets.
 
-Important boundary
-xemX should not be framed as a generic AI materials company, a generic coatings
-shop, or a full manufacturing/final-validation provider. The campaign narrows
-candidate regions. Device, cell, stack, hardware, package, part-level, and
-production validation happen after screening.
+Public wording should stay close to the work:
+- real samples
+- thin-film libraries
+- composition gradients
+- measured points
+- local electrochemical screening
+- XRD, EDX / WDX, electrical, optical, magnetic, and mechanical maps
+- candidate regions
+- final validation after screening
+
+Avoid these frames:
+- generic AI materials company
+- generic coatings shop
+- final manufacturing approval provider
+- full device validation provider
+- full battery cell validation provider
+- full semiconductor integration provider
+- production qualification provider
 
 
-1. USE CASE FAMILIES
+1. LITERATURE BASIS
 
-1.1 Electrocatalyst discovery
-Potential material questions:
+1.1 Direct XemX / Banko / Ludwig / Schuhmann evidence
+
+Combinatorial thin-film libraries and measured maps
+- Literature supports co-sputtered thin-film material libraries, 100 mm wafer
+  formats, 342 measurement areas, EDX composition maps, XRD maps, and
+  four-point probe resistance maps.
+- Use publicly: yes.
+- Website translation: XemX creates thin-film libraries, measures many points,
+  and returns composition-property maps.
+- Key source: Thelen, Banko, Zehl, Baha, Ludwig, Digital Discovery 2023,
+  DOI 10.1039/D3DD00125C.
+
+High-entropy alloy and complex-solid-solution electrocatalysts
+- Literature supports HEA and complex-solid-solution electrocatalyst discovery
+  using co-sputtered libraries and high-throughput electrochemical screening.
+- Use publicly: yes.
+- Website translation: XemX can test multicomponent catalyst libraries before
+  customer protocol, electrode, cell, or stack validation.
+- Key sources:
+  - Banko et al., deposition source permutations, arXiv:2106.08776.
+  - Banko et al., Advanced Energy Materials 2022, DOI 10.1002/aenm.202103312.
+  - Batchelor et al., Angewandte Chemie 2021, DOI 10.1002/anie.202014374.
+
+Water electrolysis and HER / OER / ORR screening
+- Literature supports HER, OER, and ORR screening on catalyst libraries.
+- Use publicly: yes.
+- Website translation: XemX can map local activity and stability-relevant
+  behavior across catalyst compositions, then select regions for validation.
+- Key sources:
+  - Mo-Ru HER work, DOI 10.1002/celc.202400631.
+  - Ni-Pd-Pt-Ru OER Bayesian optimization work, DOI 10.1002/advs.202507302.
+  - Co-Fe-Ni OER screening work, DOI 10.1002/cctc.202401749.
+
+Scanning Droplet Cell and SECCM
+- Literature supports local electrochemical screening through Scanning Droplet
+  Cell and SECCM-style methods.
+- Use publicly: yes.
+- Website translation: SDC is a core local electrochemical screening method.
+  SECCM can be described as a project-dependent higher-resolution route.
+- Key sources:
+  - Schuhmann group micro/nanoelectrochemistry pages and papers.
+  - Banko et al., Advanced Materials 2023, DOI 10.1002/adma.202207635.
+
+Data-guided measurement and follow-up
+- Literature supports active learning, Gaussian-process measurement selection,
+  and Bayesian optimization in materials-library workflows.
+- Use publicly: yes, translated into plain language.
+- Website translation: measured maps can guide the next measurement, the next
+  library, or a smaller validation set.
+- Avoid public headline: "AI materials platform."
+- Key sources:
+  - Thelen, Banko, Zehl, Baha, Ludwig, Digital Discovery 2023,
+    DOI 10.1039/D3DD00125C.
+  - Thelen et al., Advanced Science 2025, DOI 10.1002/advs.202507302.
+
+XRD interpretation support
+- Literature supports XCA-style automated XRD phase identification and VAE-style
+  novelty detection for large XRD data sets.
+- Use publicly: detail page or methods page only.
+- Website translation: software can help interpret large XRD maps; expert review
+  and measured data remain central.
+- Key source: Banko, Maffettone, Naujoks, Olds, Ludwig, npj Computational
+  Materials 2021, DOI 10.1038/s41524-021-00575-9.
+
+Oxide and photoelectrochemical thin-film libraries
+- Literature supports oxide libraries and photoelectrochemical screening,
+  including Ti-W-O, Fe-W-O, Fe-V-O, Ag-V-O, Bi-Mo-W-O, and related materials.
+- Use publicly: yes.
+- Website translation: XemX can map oxide and nitride thin-film regions where
+  structure, stoichiometry, optical response, electrical response, or
+  photoelectrochemical behavior matter.
+- Key sources:
+  - ChemSusChem 2015 semiconductor material library papers,
+    DOI 10.1002/cssc.201402917 and DOI 10.1002/cssc.201402918.
+  - Fe-V-O solar water splitting, DOI 10.1021/acscombsci.8b00030.
+  - Bi-Mo-W-O photoelectrochemical library, DOI 10.1515/zpch-2019-1439.
+
+Reactive sputtered nitride and hard-film libraries
+- Literature supports Cr-Al-N and related reactive sputtered nitride studies
+  tied to automated XRD, plasma diagnostics, and mechanical properties.
+- Use publicly: yes, as oxide/nitride and hard-film screening.
+- Website translation: XemX can screen reactive sputtered nitrides and oxides
+  where composition, phase, hardness, and process fit matter.
+- Key source: Banko et al., ACS Combinatorial Science 2019,
+  DOI 10.1021/acscombsci.9b00123.
+
+Magnetic and shape-memory screening
+- Ruhr/ZGH/Ludwig literature supports MOKE mapping, magnetic thin-film
+  libraries, and ferromagnetic shape-memory alloy library screening.
+- Use publicly: yes, as an application family. Keep final device and stack
+  validation outside the claim.
+- Website translation: XemX can map magnetic response across thin-film
+  composition libraries and identify regions for stack-specific validation.
+- Key sources:
+  - Ludwig, npj Computational Materials 2019, DOI 10.1038/s41524-019-0205-0.
+  - Thienhaus, Hamann, Ludwig, Science and Technology of Advanced Materials
+    2011, DOI 10.1088/1468-6996/12/5/054206.
+
+Follow-up samples and electrode transfer
+- Literature supports cases where hit compositions from thin-film screens were
+  transferred into powder, electrode, foam, or gas-diffusion-electrode formats.
+- Use publicly: yes, with careful wording.
+- Website translation: selected regions can guide follow-up samples or customer
+  validation formats.
+- Avoid promise: standard scale-up, manufacturing transfer, or production
+  approval.
+- Key sources:
+  - Mo-Ru HER work, DOI 10.1002/celc.202400631.
+  - Co-Cu-Mo-Pd-Re to gas diffusion electrodes, DOI 10.1002/adfm.202400180.
+  - Co-Fe-Ni OER work, DOI 10.1002/cctc.202401749.
+
+CO2 and battery-interface examples
+- Literature and Ruhr electrochemistry context support CO2-related
+  electrochemistry and battery-interface methods as plausible project-dependent
+  questions.
+- Use publicly: yes, as project-dependent examples.
+- Website translation: use one careful line in electrochemical applications or
+  detail pages. Do not imply full battery-cell validation or guaranteed CO2
+  product selectivity.
+
+Semiconductor, RF acoustic, package, and interface examples
+- Literature supports thin-film semiconductor material libraries and general
+  thin-film screening methods. The local guide includes semiconductor,
+  RF acoustic, package, barrier, liner, cap, contact, and interface examples.
+- Use publicly: yes, as application families and campaign examples.
+- Website translation: these are screening questions before device, resonator,
+  stack, package, or reliability validation.
+
+
+2. WEBSITE CLAIM TIERS
+
+2.1 Safe homepage claims
+
+Use these directly:
+- Physical thin-film material libraries.
+- Real samples.
+- 100 mm wafer library format.
+- 342 measured areas or compositions.
+- Up to 7 elements or cathodes, when describing the deposition system.
+- Magnetron co-sputtering.
+- Reactive sputtering.
+- Composition gradients.
+- High-throughput characterization.
+- EDX / WDX composition mapping.
+- XRD phase and structure mapping.
+- Four-point probe resistance or resistivity mapping.
+- Scanning Droplet Cell local electrochemical screening.
+- UV-VIS optical screening.
+- MOKE magnetic screening.
+- Nanoindentation for hardness and modulus.
+- Measured composition-property maps.
+- Candidate-region selection.
+- Data-guided follow-up.
+- Final validation happens after screening.
+
+2.2 Good detail-page claims
+
+Use on methods, applications, or examples pages:
+- SECCM as a higher-resolution electrochemical route.
+- Long-range SECCM as project-dependent support.
+- XCA-assisted XRD analysis.
+- VAE-style XRD novelty detection.
+- Bayesian optimization.
+- Gaussian-process measurement selection.
+- Deposition source permutations.
+- Microscale combinatorial libraries.
+- Follow-up uniform depositions.
+- Electrode, foam, powder, or gas-diffusion-electrode transfer where scoped.
+- CO2 electroreduction as a project-dependent electrochemical question.
+- Battery interface / SEI screening as a project-dependent electrochemical
+  question.
+- Semiconductor-relevant thin-film screening.
+- RF acoustic film screening.
+- Magnetic-library screening.
+- Shape-memory and ferromagnetic shape-memory directions.
+
+2.3 Keep vague
+
+Use broad wording until a proposal or approval defines the route:
+- Bochum, Ruhr, or ZGH ecosystem support.
+- Broader characterization routes.
+- Cleanroom support.
+- Microfabrication support.
+- Etch and patterning support.
+- Facility access.
+- Partner-supported scale-up.
+- Manufacturing transfer support.
+
+Approved vague wording:
+- "Project-dependent follow-up routes can connect selected regions to deeper
+  characterization or validation support."
+- "Where the project requires it, selected candidates can move into additional
+  characterization or customer validation formats."
+- "The work is rooted in Ruhr University Bochum and ZGH research experience,
+  with project scope defined before follow-up work begins."
+
+2.4 Avoid unless approved for a specific proposal
+
+Do not use as default website claims:
+- Full device validation.
+- Full battery-cell validation.
+- Full semiconductor integration.
+- Full resonator validation.
+- Hardware reliability approval.
+- Package-level qualification.
+- Production coating scale-up.
+- Full manufacturing transfer.
+- Production approval.
+- Guaranteed facility access.
+- Named customer work.
+- Named partner work.
+- Patent claims.
+- Citation-count claims.
+- Standard delivery promises.
+
+
+3. APPLICATION FAMILIES
+
+3.1 Electrocatalyst discovery
+
+Public status: homepage core.
+
+Material questions:
 - Which mixed-metal surface gives the activity and stability profile worth
   repeating under the customer test protocol?
 - Which catalyst or electrode material region should be repeated or refined?
 - Which composition regions show promising local activity or surface response?
 
-Likely campaign shape:
+Campaign shape:
 - Prepare catalyst or electrode material libraries.
 - Run localized electrochemical measurements across the library.
 - Tie activity, stability, or surface response back to composition and phase.
-- Return an activity/stability map and candidate regions.
+- Return activity maps and candidate regions.
 
-Examples and reaction areas:
-- HER / hydrogen evolution reaction.
-- OER / oxygen evolution reaction.
-- ORR / oxygen reduction reaction.
+Examples:
+- HER / hydrogen evolution.
+- OER / oxygen evolution.
+- ORR / oxygen reduction.
 - Water electrolysis material directions.
 - Mixed-metal catalysts.
 - Complex catalyst compositions.
 - Catalyst, electrode, and electrochemical surface questions.
 - Corrosion-relevant material libraries where local electrochemistry applies.
+- CO2 electroreduction, where scoped.
+- Battery interface / SEI questions, where scoped.
 
 Boundary:
-- Full cell, stack, hardware, or customer protocol validation comes after the
-  screening campaign.
-- CO2 electroreduction and battery SEI/battery-interface screening are
-  potential/approval-needed claims before public use.
+- Full cell, stack, hardware, or customer protocol validation follows screening.
 
+3.2 Complex alloys and solid solutions
 
-1.2 Complex alloys and solid solutions
-Potential material questions:
+Public status: homepage or applications page.
+
+Material questions:
 - Which multicomponent alloy region is worth preparing again for a target
   property?
-- Which composition region balances phase, hardness, electrical behavior,
-  magnetic response, activity, or stability?
-- Which high-entropy or complex-solid-solution direction should be selected
-  for deeper validation?
+- Which region balances phase, hardness, electrical behavior, magnetic
+  response, activity, or stability?
+- Which high-entropy or complex-solid-solution direction should move to deeper
+  validation?
 
-Likely campaign shape:
+Campaign shape:
 - Create composition-spread alloy libraries.
 - Map composition, phase, and the property tied to the decision.
 - Compare tradeoffs across multicomponent spaces.
@@ -78,25 +323,25 @@ Examples:
 - Multicomponent alloy spaces.
 
 Boundary:
-- Bulk alloy, powder, part-level, or final-format validation comes after the
-  thin-film screening campaign.
-- Shape-memory and ferromagnetic shape-memory public claims should be checked
-  against current commercial scope before launch.
+- Bulk alloy, powder, part-level, or final-format validation follows thin-film
+  screening.
 
+3.3 Oxide and nitride libraries
 
-1.3 Oxide and nitride libraries
-Potential material questions:
-- Which oxide or nitride composition region forms the desired phase and
-  property combination?
+Public status: homepage or applications page.
+
+Material questions:
+- Which oxide or nitride region forms the desired phase and property
+  combination?
 - Which stoichiometry or process range gives the required structure or
   functional response?
 - Which reactive sputtering route should be narrowed for follow-up?
 
-Likely campaign shape:
+Campaign shape:
 - Use reactive sputtering to create oxide or nitride material libraries.
 - Map composition, structure, stoichiometry, and functional properties.
 - Link phase formation and property response.
-- Run a narrower campaign or prepare selected uniform films.
+- Run a narrower campaign or prepare selected follow-up films.
 
 Examples:
 - Perovskite oxides.
@@ -109,19 +354,20 @@ Examples:
 - Semiconductor-adjacent layers.
 
 Boundary:
-- Final device, catalyst, coating, or hardware validation comes after the
-  screen.
+- Final device, catalyst, coating, or hardware validation follows screening.
 
+3.4 Semiconductor-relevant thin films
 
-1.4 Semiconductor thin films
-Potential material questions:
+Public status: applications page and campaign examples.
+
+Material questions:
 - Which W, Mo, Ru, or related thin-film region keeps resistivity low enough at
   the target thickness?
 - Which barrier, liner, cap, contact, gate-insulator-adjacent oxide, or memory
   stack material should move into device-level testing?
 - Which composition, phase, resistivity, or texture window is worth narrowing?
 
-Likely campaign shape:
+Campaign shape:
 - Create thin-film material libraries around a semiconductor-relevant layer
   question.
 - Map phase, texture, resistivity, composition, and structure.
@@ -139,22 +385,22 @@ Examples:
 - Semiconductor-adjacent functional films.
 
 Boundary:
-- Full semiconductor integration and device-level testing come after screening.
-- Public semiconductor wording should avoid implying fab-qualified final
-  integration unless explicitly approved.
+- Full semiconductor integration and device-level testing follow screening.
 
+3.5 RF acoustic films
 
-1.5 RF acoustic films
-Potential material questions:
+Public status: applications page and campaign examples.
+
+Material questions:
 - Which AlScN, ScAlN, or related composition and process window gives the
   needed texture without unwanted phase formation?
 - Which composition windows deserve resonator-level testing?
 
-Likely campaign shape:
+Campaign shape:
 - Create gradient thin-film libraries.
 - Compare composition, structure, texture, and electrical or mechanical
   proxies.
-- Return candidate composition/process windows.
+- Return candidate composition and process windows.
 
 Examples:
 - AlN.
@@ -164,18 +410,20 @@ Examples:
 - Piezoelectric-response-relevant films.
 
 Boundary:
-- Resonator-level testing and customer device-stack validation come after the
+- Resonator-level testing and customer device-stack validation follow the
   campaign.
 
+3.6 Magnetic thin films
 
-1.6 Magnetic thin films
-Potential material questions:
+Public status: applications page and campaign examples.
+
+Material questions:
 - Which composition regions reach the target magnetic response while keeping
   the needed phase and structure?
 - Which magnetic multilayer or reduced-rare-earth direction deserves deeper
   stack-specific validation?
 
-Likely campaign shape:
+Campaign shape:
 - Screen composition, structure, and magnetic behavior across a thin-film
   material library.
 - Tie MOKE magnetic response to composition and phase data.
@@ -186,20 +434,22 @@ Examples:
 - Coercivity screening.
 - Magnetic response mapping.
 - Reduced-rare-earth directions.
-- Ferromagnetic shape-memory directions, if commercially relevant.
+- Ferromagnetic shape-memory directions, if relevant to the project.
 
 Boundary:
-- Stack-specific validation comes after screening.
+- Stack-specific validation follows screening.
 
+3.7 Optical and photoelectrochemical films
 
-1.7 Optical and photoelectrochemical films
-Potential material questions:
+Public status: applications page and campaign examples.
+
+Material questions:
 - Which film region balances optical response, composition, phase, and
   stability-relevant behavior?
 - Which transparent, reflective, absorptive, photonic, or photoresponse region
   deserves follow-up?
 
-Likely campaign shape:
+Campaign shape:
 - Map optical or photoelectrochemical response, composition, and structure
   across a controlled thin-film library.
 - Compare reflectance, absorption, transparency, conductivity, stability, or
@@ -216,17 +466,19 @@ Examples:
 
 Boundary:
 - Final coating stack, photonic device, or photoelectrochemical validation
-  comes after screening.
+  follows screening.
 
+3.8 Protective coatings and packaging interfaces
 
-1.8 Protective coatings and packaging interfaces
-Potential material questions:
+Public status: applications page and campaign examples.
+
+Material questions:
 - Which coating region keeps conductivity while improving durability or
   chemical stability?
 - Which bonding, barrier, adhesion, current-collector, protective, or package
   interface material should move into reliability testing?
 
-Likely campaign shape:
+Campaign shape:
 - Screen composition, structure, resistance, mechanical response, and
   interface-relevant behavior.
 - Return tradeoff maps showing where performance starts to fail.
@@ -242,136 +494,42 @@ Examples:
 - Interface materials.
 
 Boundary:
-- Hardware or package-level reliability testing comes after screening.
+- Hardware or package-level reliability testing follows screening.
 
 
-1.9 Broader cross-cutting campaign use cases
-These are not separate industries as much as reusable decision patterns:
-- Too many candidate compositions to test one by one.
-- Expensive final validation should not be the first filter.
-- Several properties matter at once.
-- A material works for one property but fails on phase, texture, conductivity,
-  stability, process fit, hardness, optical response, magnetic behavior, or
-  electrochemical response.
-- Literature or simulation narrows ideas but cannot replace measured data from
-  real samples.
-- The customer needs a measured map before choosing a smaller validation set.
-- A first campaign needs to guide a second, tighter campaign.
-- A promising region needs follow-on uniform samples.
-- A larger multielement search space needs campaign-by-campaign sampling
-  without pretending every composition has been covered.
+4. EXPERIMENTAL CAPABILITIES
 
+4.1 Library creation
 
-2. CAMPAIGN EXAMPLES
-
-2.1 Low-resistance thin films
-Category: semiconductor materials.
-Question: which W, Mo, Ru, or related thin-film region keeps resistivity low
-enough at the target thickness?
-Campaign: map composition, phase, texture, and resistivity across a thin-film
-library.
-Output: candidate regions for customer-specific process or device validation.
-Next step: tighter process windows on selected film families.
-
-2.2 AlScN film screening
-Category: RF acoustic films.
-Question: which AlScN composition and process window gives the needed texture
-without unwanted phase formation?
-Campaign: create gradient libraries and compare composition, structure, and
-electrical or acoustic proxies.
-Output: composition regions that deserve resonator-level testing.
-Next step: transfer best windows into customer device stacks.
-
-2.3 Electrocatalyst composition search
-Category: localized electrochemistry.
-Question: which mixed-metal surface gives the activity and stability profile
-worth repeating under the customer test protocol?
-Campaign: prepare catalyst material libraries and run localized electrochemical
-measurements.
-Output: measured activity map with regions to repeat or refine.
-Next step: validate selected catalysts under the customer test protocol.
-
-2.4 High-entropy alloy screen
-Category: complex alloys.
-Question: which multicomponent alloy region is worth preparing again for a
-target property or electrochemical response?
-Campaign: create a composition-spread alloy library and map composition,
-phase, and the property tied to the decision.
-Output: composition-property map showing candidate regions and regions to
-avoid.
-Next step: prepare follow-up samples around the best region for customer
-validation.
-
-2.5 Oxide or nitride library
-Category: reactive sputtering.
-Question: which oxide or nitride composition region forms the desired phase and
-property combination?
-Campaign: use reactive sputtering to create a library, then map composition,
-structure, and the relevant functional property.
-Output: measured map linking stoichiometry, phase, and property response.
-Next step: run a narrower campaign or prepare selected uniform films.
-
-2.6 Conductive protective coating
-Category: coatings and interfaces.
-Question: which coating region keeps conductivity while improving durability
-or chemical stability?
-Campaign: screen composition, structure, resistance, and mechanical response
-across a coating library.
-Output: tradeoff map showing where performance starts to fail.
-Next step: build a smaller validation set around the best tradeoff region.
-
-2.7 Magnetic thin-film screening
-Category: magnetic materials.
-Question: which composition regions reach the target magnetic response while
-keeping the needed phase and structure?
-Campaign: screen composition, structure, and magnetic behavior across a
-thin-film material library.
-Output: magnetic response map tied to composition and phase data.
-Next step: move selected regions into stack-specific or device-adjacent
-validation.
-
-2.8 Optical or photoelectrochemical film
-Category: functional thin films.
-Question: which film regions balance optical response, composition, phase, and
-stability-relevant behavior?
-Campaign: map optical or photoelectrochemical response, composition, and
-structure across a controlled thin-film library.
-Output: optical-property map showing candidate regions and tradeoffs.
-Next step: prepare follow-up films for customer coating or photonic test
-structures.
-
-
-3. EXPERIMENTAL CAPABILITIES
-
-3.1 Physical library creation
-Core experimental capabilities:
+Core:
 - Combinatorial thin-film material libraries.
 - Composition-spread thin-film libraries.
 - 100 mm wafer library format.
+- 342 measured areas or compositions.
 - Hundreds of measured points per campaign.
-- 342 measured compositions, if approved for public use.
 - Multisource magnetron co-sputtering.
 - Co-sputtered lateral composition-gradient libraries.
-- Up to 7 co-sputtered elements, if approved for public use.
+- Up to 7 co-sputtered elements or cathodes.
 - Multicomponent material spaces.
 - Reactive sputtering.
 - Oxide and nitride material libraries.
 - Metals, alloys, nitrides, and oxides.
 - Continuous lateral composition gradients.
-- Follow-on uniform depositions for promising regions.
+
+Project-dependent:
+- Follow-up uniform depositions for promising regions.
 - Deposition source permutations for larger multielement search spaces.
+- Microscale combinatorial libraries.
+- Electrode, foam, powder, or gas-diffusion-electrode transfer routes.
 
 Plain meaning:
-- Many related material compositions can be created in one campaign instead of
-  one sample at a time.
-- One wafer or sample set can cover a range of related compositions.
-- Each measured location can become a point on a composition-property map.
-- Promising regions can be prepared again as simpler or more uniform follow-up
-  samples.
+- One wafer or sample set can cover many related compositions.
+- Each measured location becomes a point on a composition-property map.
+- Promising regions can guide a smaller validation set.
 
+4.2 Measurement and characterization
 
-3.2 Measurement and characterization stack
-Core characterization capabilities:
+Core:
 - Composition mapping.
 - EDX / WDX composition mapping.
 - Phase and structure mapping.
@@ -394,11 +552,10 @@ Core characterization capabilities:
 - MOKE magnetic characterization.
 - Localized electrochemical screening.
 - Scanning Droplet Cell.
-- SECCM where the project calls for higher-resolution local electrochemistry.
-- Long-range SECCM as support for higher-resolution local electrochemical
-  mapping across large libraries.
 
-Support/follow-up characterization capabilities:
+Project-dependent:
+- SECCM for higher-resolution local electrochemistry.
+- Long-range SECCM for larger material-library mapping.
 - SEM.
 - TEM.
 - Related electron microscopy.
@@ -413,35 +570,32 @@ Support/follow-up characterization capabilities:
 - Advanced chemistry, depth, light-element, or nanoscale composition analysis.
 
 Plain meaning:
-- Composition mapping shows which elements are present, where they are, and in
-  what ratio.
-- XRD shows which structures or phases form across the library.
+- Composition mapping shows which elements are present and in what ratio.
+- XRD shows which structures or phases form.
 - Electrical screening shows conductivity or resistivity behavior.
 - Mechanical screening compares hardness and stiffness.
 - Optical screening maps reflectance, absorption, transparency, or optical
   response.
-- Magnetic screening shows where the target magnetic behavior appears across
-  composition space.
+- Magnetic screening shows where target magnetic behavior appears.
 - Local electrochemical screening compares activity, stability, and surface
-  behavior across many compositions.
+  behavior across compositions.
 
+4.3 Choosing the next experiment
 
-3.3 Choosing the next experiment
-Core analysis capabilities:
+Core:
 - Campaign design around the material question.
 - Composition-property maps.
 - Multi-property tradeoff comparison.
-- Pareto-style or multi-objective comparison when the project has several
-  target properties.
-- Data-guided iteration.
-- Active learning.
-- Gaussian-process measurement selection.
-- Measured-map guided follow-up campaigns.
-- Thin-film proxy discipline.
 - Candidate-region selection.
 - Regions-to-avoid identification.
+- Measured-map guided follow-up.
+- Data-guided measurement selection.
+- Data-guided follow-up campaigns.
+- Thin-film proxy discipline.
 
-Support analysis capabilities:
+Project-dependent:
+- Bayesian optimization.
+- Gaussian-process measurement selection.
 - Automated pattern analysis.
 - Automated XRD interpretation support.
 - XCA-assisted XRD analysis.
@@ -449,15 +603,16 @@ Support analysis capabilities:
 - Modeling and data analysis support for campaign design and interpretation.
 
 Plain meaning:
-- The value is the campaign design: choose the material space, measure the right
-  properties, compare tradeoffs, and decide what to test next.
+- The campaign defines the material space, the measurements, and the decision.
 - The first measured map can guide the next measurement, sample, or campaign.
-- Software can help interpret large data sets, but the core output remains
-  measured data from real samples.
+- Software can support interpretation. The core output is measured data from
+  real samples.
 
+4.4 Follow-up support
 
-3.4 Follow-up support when needed
-Potential follow-up options:
+Use vague public wording unless a proposal defines the route.
+
+Potential follow-up:
 - Broader characterization support.
 - Bochum-based characterization routes.
 - Microscopy support.
@@ -467,14 +622,15 @@ Potential follow-up options:
 - Advanced interface analysis.
 - Test-structure support.
 - Computational analysis support.
-- Partner-supported scale-up or manufacturing transfer, if approved.
+- Partner-supported scale-up or manufacturing transfer.
 
 Boundary:
-- These are follow-up options, not guaranteed parts of every campaign. Confirm
-  availability and project scope before listing them in a proposal.
+- These are project-dependent follow-up options. Confirm availability, rights,
+  facility access, partner scope, and customer scope before listing them in a
+  proposal.
 
 
-4. MATERIAL SPACES AND PROPERTIES
+5. MATERIAL SPACES AND PROPERTIES
 
 Material families:
 - Metals.
@@ -543,55 +699,50 @@ Property and response types:
 - Process fit.
 
 
-5. PUBLIC-APPROVAL SENSITIVITY
+6. WEBSITE PLACEMENT
 
-Likely safe/core for public wording, subject to final approval:
-- Physical material libraries.
-- Real samples.
-- Combinatorial thin-film libraries.
-- Composition gradients.
-- High-throughput characterization.
-- Measured composition-property maps.
-- Localized electrochemical screening.
-- Candidate-region selection.
-- Data-guided follow-up.
-- Final validation happens after screening.
+Homepage should show:
+- XemX creates measured thin-film material libraries.
+- 100 mm, 342 measured areas, and up to 7 elements or cathodes as proof points.
+- The main output is a composition-property map.
+- Electrocatalyst and thin-film screening are the clearest lead examples.
+- Final validation follows screening.
 
-Needs explicit approval before strong public claims:
-- 100 mm wafer library format.
-- 342 measured compositions.
-- Up to 7 co-sputtered elements.
-- Facility access.
-- Partner-supported scale-up.
-- Follow-up uniform depositions as standard deliverables.
-- Semiconductor-relevant campaign scope.
-- Cleanroom, microfabrication, etch, and patterning support.
-- SEM / TEM / FIB / APT or equivalent advanced-characterization routes.
-- XCA-assisted XRD analysis.
-- VAE-style XRD novelty detection.
-- Long-range SECCM.
-- Campaign-level Bayesian optimization.
-- Deposition-source permutation strategy.
-- CO2 electroreduction.
-- Battery interface / SEI screening.
-- Shape-memory and ferromagnetic shape-memory commercial scope.
-- Magnetic-library commercial scope.
-- Any named customer, partner, facility, numeric proof point, citation count,
-  patent, or standard delivery promise.
+Applications page should show:
+- Electrocatalyst discovery.
+- Complex alloys and solid solutions.
+- Oxide and nitride libraries.
+- Semiconductor-relevant thin films.
+- RF acoustic films.
+- Magnetic thin films.
+- Optical and photoelectrochemical films.
+- Protective coatings and packaging interfaces.
 
-Should not be framed as core unless explicitly approved:
-- Broad production coating scale-up.
-- Generic custom material solutions.
-- Generic AI materials platform.
-- Full device validation.
-- Full battery cell validation.
-- Full semiconductor integration.
-- Full manufacturing transfer.
-- Production approval.
-- Complete material idea-to-final-product delivery.
+Methods page should show:
+- Co-sputtering.
+- Reactive sputtering.
+- Composition mapping.
+- XRD.
+- Four-point probe.
+- SDC.
+- UV-VIS.
+- MOKE.
+- Nanoindentation.
+- Project-dependent SECCM and deeper characterization.
+- Data-guided measurement and follow-up.
+
+Research basis section should show:
+- Lars Banko: materials-library campaigns, high-throughput workflows, active
+  learning, XRD-analysis support.
+- Alfred Ludwig: combinatorial thin-film materials discovery, Ruhr/ZGH
+  high-throughput methods, library synthesis and characterization.
+- Wolfgang Schuhmann: local electrochemical screening, SDC, SECCM, catalyst and
+  electrode electrochemistry.
+- Keep the section compact. Use papers as evidence for methods, not as
+  decorative prestige.
 
 
-6. ONE-LINE USE-CASE TEMPLATE
+7. ONE-LINE USE-CASE TEMPLATE
 
 Use this template for new use cases:
 
@@ -607,3 +758,12 @@ Examples:
   composition, and phase before device-level testing.
 - We test coating libraries to measure resistance, mechanical response, and
   stability before hardware reliability testing.
+- We test oxide or nitride libraries to measure phase, stoichiometry, and
+  functional response before selected-film validation.
+
+
+8. SAME RULE FOR KASPA-EXPLAINED STYLE
+
+When translating this guide into website copy, follow the same rule used for
+Kaspa Explained work: explain the real job first, name the technical term only
+when it improves precision, and keep claim boundaries visible.
