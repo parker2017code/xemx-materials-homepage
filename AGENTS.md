@@ -1,5 +1,19 @@
 # XemX Agent Guidance
 
+## Codex Operating Spine
+
+- Codex is the primary agent for this repo. Use `AGENTS.md` as the durable instruction source.
+- Claude Code is secondary future compatibility. If `CLAUDE.md` exists, it should import this file instead of carrying a separate rule set.
+- Start substantive work by checking `git status --short`, reading the relevant page/component/doc, and identifying the exact buyer, material question, claim boundary, or layout issue before editing.
+- Make the smallest coherent patch. Do not rewrite unrelated files, change public routes, or add dependencies without explicit approval.
+- Preserve public behavior and review URLs unless the user explicitly asks for a behavior change.
+- Do not change lockfiles, package managers, auth, deployment, domain, analytics, or GitHub Pages settings without calling it out before the edit.
+- For risky or broad changes, write a short plan before implementation. For narrow defect fixes, inspect first and patch directly.
+- After edits, report changed files, commands run, verification result, commit hash, push target, and any remaining risk.
+- If a check fails, report the exact command and failure. Fix only failures related to the current task unless the user expands scope.
+- For UI/layout changes, verify desktop and mobile behavior with rendered checks or screenshots when possible, and check long material names, method lists, source titles, and metric rows for overflow.
+- Before committing, run `npm run lint:copy` for prose changes and `npm run build` for app changes.
+
 ## Writing Rules
 
 These rules apply to prose generated or edited in this repo: Markdown, HTML copy, docs, UI copy, comments, PR text, and commit messages.
