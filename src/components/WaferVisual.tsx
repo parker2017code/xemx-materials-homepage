@@ -12,7 +12,7 @@ const dots = Array.from({ length: 121 }, (_, index) => {
 
 function Metric({ label, value }: { label: string; value: string }) {
   return (
-    <div className="min-h-[68px] rounded-2xl border border-blue-100 bg-blue-50/55 px-4 py-3 text-left">
+    <div className="rounded-xl border border-blue-100 bg-blue-50/55 px-3 py-3 text-left">
       <p className="text-[0.66rem] font-semibold uppercase tracking-[0.1em] text-blue-700">{label}</p>
       <p className="mt-1 break-words text-sm font-semibold leading-snug text-slate-900">{value}</p>
     </div>
@@ -21,21 +21,21 @@ function Metric({ label, value }: { label: string; value: string }) {
 
 export function WaferVisual() {
   return (
-    <div className="relative w-full min-w-0 overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-5 shadow-soft sm:p-7">
-      <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+    <div className="relative w-full min-w-0 overflow-hidden rounded-3xl border border-slate-200 bg-white p-4 shadow-soft sm:p-5">
+      <div className="mb-4 grid min-w-0 gap-2 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
         <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
           real samples
         </span>
-        <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+        <span className="min-w-0 text-xs font-semibold uppercase leading-5 tracking-[0.14em] text-slate-500">
           100 mm wafer library
         </span>
       </div>
 
-      <div className="grid min-w-0 gap-5 lg:grid-cols-[minmax(0,1.35fr)_minmax(150px,0.72fr)] lg:items-start">
-        <div className="flex min-w-0 items-start justify-center rounded-3xl border border-slate-100 bg-slate-50/60 p-3">
+      <div className="grid min-w-0 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)]">
+        <div className="grid min-w-0 place-items-center rounded-2xl border border-slate-100 bg-slate-50/70 p-3">
           <svg
             viewBox="12 12 186 186"
-            className="h-auto w-full max-w-[360px]"
+            className="h-auto w-full max-w-[260px]"
             role="img"
             aria-label="Wafer library with gradient and measured points"
           >
@@ -86,12 +86,12 @@ export function WaferVisual() {
           </svg>
         </div>
 
-        <div className="flex min-w-0 flex-col justify-between rounded-3xl border border-slate-200 bg-slate-50 p-3">
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            <p className="min-w-0 text-xs font-semibold uppercase leading-5 tracking-[0.16em] text-slate-500">composition-property map</p>
+        <div className="grid min-w-0 content-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-3">
+          <div className="grid min-w-0 gap-2 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
+            <p className="min-w-0 text-xs font-semibold uppercase leading-5 tracking-[0.14em] text-slate-500">measured map</p>
             <span className="shrink-0 rounded-full bg-white px-2.5 py-1 text-[0.68rem] font-semibold text-blue-700">screened</span>
           </div>
-          <div className="mt-4 grid grid-cols-8 gap-1.5">
+          <div className="grid grid-cols-8 gap-1.5">
             {Array.from({ length: 48 }, (_, index) => {
               const row = Math.floor(index / 8)
               const col = index % 8
@@ -107,17 +107,17 @@ export function WaferVisual() {
               return <div key={index} className={`aspect-square rounded ${color}`} />
             })}
           </div>
-          <div className="mt-4 h-16 rounded-2xl border border-slate-200 bg-white px-3 py-2.5">
+          <div className="h-14 rounded-xl border border-slate-200 bg-white px-3 py-2">
             <svg viewBox="0 0 220 56" className="h-full w-full" aria-label="Measured property curve">
               <path d="M4 46C28 42 38 26 59 29C80 32 81 13 101 14C127 15 126 37 151 33C176 30 181 12 216 9" fill="none" stroke="#DBEAFE" strokeWidth="9" strokeLinecap="round" />
               <path d="M4 46C28 42 38 26 59 29C80 32 81 13 101 14C127 15 126 37 151 33C176 30 181 12 216 9" fill="none" stroke="#2563EB" strokeWidth="2.5" strokeLinecap="round" />
             </svg>
           </div>
-          <p className="mt-3 text-xs leading-5 text-slate-500">Measured points become a map for the next decision.</p>
+          <p className="text-xs leading-5 text-slate-500">Measured points become a map for the next decision.</p>
         </div>
       </div>
 
-      <div className="mt-6 grid gap-3 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+      <div className="mt-4 grid gap-3 sm:grid-cols-3">
         <Metric label="library" value="composition gradient" />
         <Metric label="output" value="measured map" />
         <Metric label="next" value="candidate regions" />

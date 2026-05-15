@@ -12,15 +12,15 @@ const proofChips = [
 
 export function Hero() {
   return (
-    <section id="top" className="mx-auto grid max-w-[1200px] gap-10 overflow-hidden px-6 pb-12 pt-12 sm:pt-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:px-10 lg:pb-16 lg:pt-16 xl:px-16">
+    <section id="top" className="mx-auto grid w-full max-w-[1200px] gap-10 overflow-x-clip px-6 pb-12 pt-12 sm:pt-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:px-10 lg:pb-16 lg:pt-16 xl:px-16">
       <div className="flex min-w-0 max-w-full flex-col justify-center">
         <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">
           Materials screening campaigns
         </p>
-        <h1 className="max-w-full text-[1.75rem] font-semibold leading-[1.1] tracking-tight text-slate-950 min-[380px]:text-[1.95rem] sm:max-w-4xl sm:text-6xl lg:text-[4rem]">
+        <h1 className="max-w-full break-words text-[1.75rem] font-semibold leading-[1.1] tracking-tight text-slate-950 [overflow-wrap:anywhere] min-[380px]:text-[1.95rem] sm:max-w-4xl sm:text-6xl lg:text-[4rem]">
           Map real material variations before the next validation run.
         </h1>
-        <p className="mt-6 max-w-full text-[1.05rem] leading-8 text-slate-600 sm:max-w-2xl sm:text-xl sm:leading-9">
+        <p className="mt-6 max-w-full break-words text-[1.05rem] leading-8 text-slate-600 [overflow-wrap:anywhere] sm:max-w-2xl sm:text-xl sm:leading-9">
           xemX builds thin-film material libraries, measures how properties change, and gives R&D teams a map for the next test.
         </p>
 
