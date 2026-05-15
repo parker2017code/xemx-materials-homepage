@@ -22,16 +22,20 @@ function Metric({ label, value }: { label: string; value: string }) {
 export function WaferVisual() {
   return (
     <div className="relative w-full min-w-0 overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-5 shadow-soft sm:p-7">
-      <div className="grid min-w-0 gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.75fr)] lg:items-start">
-        <div className="min-w-0 rounded-3xl border border-slate-100 bg-slate-50/60 p-4">
-          <div className="flex justify-center">
-            <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
-              real samples
-            </span>
-          </div>
+      <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+        <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+          real samples
+        </span>
+        <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+          100 mm wafer library
+        </span>
+      </div>
+
+      <div className="grid min-w-0 gap-5 lg:grid-cols-[minmax(0,1.35fr)_minmax(150px,0.72fr)] lg:items-start">
+        <div className="flex min-w-0 items-start justify-center rounded-3xl border border-slate-100 bg-slate-50/60 p-3">
           <svg
-            viewBox="0 0 210 210"
-            className="mx-auto mt-4 h-auto w-full max-w-[300px]"
+            viewBox="12 12 186 186"
+            className="h-auto w-full max-w-[360px]"
             role="img"
             aria-label="Wafer library with gradient and measured points"
           >
@@ -79,18 +83,15 @@ export function WaferVisual() {
               />
             ))}
             <circle cx="105" cy="105" r="88" fill="none" stroke="#94A3B8" strokeOpacity="0.42" />
-            <text x="105" y="202" textAnchor="middle" className="fill-slate-500 text-[8px] font-semibold uppercase tracking-[0.2em]">
-              100 mm wafer library
-            </text>
           </svg>
         </div>
 
-        <div className="min-w-0 rounded-3xl border border-slate-200 bg-slate-50 p-4">
+        <div className="flex min-w-0 flex-col justify-between rounded-3xl border border-slate-200 bg-slate-50 p-3">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <p className="min-w-0 text-xs font-semibold uppercase leading-5 tracking-[0.16em] text-slate-500">composition-property map</p>
             <span className="shrink-0 rounded-full bg-white px-2.5 py-1 text-[0.68rem] font-semibold text-blue-700">screened</span>
           </div>
-          <div className="mt-5 grid grid-cols-8 gap-1.5">
+          <div className="mt-4 grid grid-cols-8 gap-1.5">
             {Array.from({ length: 48 }, (_, index) => {
               const row = Math.floor(index / 8)
               const col = index % 8
@@ -106,7 +107,7 @@ export function WaferVisual() {
               return <div key={index} className={`aspect-square rounded ${color}`} />
             })}
           </div>
-          <div className="mt-5 h-20 rounded-2xl border border-slate-200 bg-white px-4 py-3">
+          <div className="mt-4 h-16 rounded-2xl border border-slate-200 bg-white px-3 py-2.5">
             <svg viewBox="0 0 220 56" className="h-full w-full" aria-label="Measured property curve">
               <path d="M4 46C28 42 38 26 59 29C80 32 81 13 101 14C127 15 126 37 151 33C176 30 181 12 216 9" fill="none" stroke="#DBEAFE" strokeWidth="9" strokeLinecap="round" />
               <path d="M4 46C28 42 38 26 59 29C80 32 81 13 101 14C127 15 126 37 151 33C176 30 181 12 216 9" fill="none" stroke="#2563EB" strokeWidth="2.5" strokeLinecap="round" />
