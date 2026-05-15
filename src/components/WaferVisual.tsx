@@ -10,32 +10,20 @@ const dots = Array.from({ length: 121 }, (_, index) => {
   return { x, y, inside, highlighted }
 }).filter((dot) => dot.inside)
 
-function Metric({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="rounded-xl border border-blue-100 bg-blue-50/55 px-3 py-3 text-left">
-      <p className="text-[0.66rem] font-semibold uppercase tracking-[0.1em] text-blue-700">{label}</p>
-      <p className="mt-1 break-words text-sm font-semibold leading-snug text-slate-900">{value}</p>
-    </div>
-  )
-}
-
 export function WaferVisual() {
   return (
     <div className="relative w-full min-w-0 overflow-hidden rounded-3xl border border-slate-200 bg-white p-4 shadow-soft sm:p-5">
-      <div className="mb-4 grid min-w-0 gap-2 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
-        <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
-          real samples
-        </span>
-        <span className="min-w-0 text-xs font-semibold uppercase leading-5 tracking-[0.14em] text-slate-500">
-          100 mm wafer library
-        </span>
-      </div>
-
-      <div className="grid min-w-0 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)]">
-        <div className="grid min-w-0 place-items-center rounded-2xl border border-slate-100 bg-slate-50/70 p-3">
+      <div className="grid min-w-0 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,0.96fr)]">
+        <div className="grid min-w-0 gap-3 rounded-2xl border border-slate-100 bg-slate-50/70 p-3">
+          <div className="flex min-w-0 items-center justify-between gap-3">
+            <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">real samples</span>
+            <span className="min-w-0 text-right text-xs font-semibold uppercase leading-5 tracking-[0.12em] text-slate-500">
+              100 mm wafer library
+            </span>
+          </div>
           <svg
             viewBox="12 12 186 186"
-            className="h-auto w-full max-w-[260px]"
+            className="mx-auto h-auto w-full max-w-[250px]"
             role="img"
             aria-label="Wafer library with gradient and measured points"
           >
@@ -87,9 +75,9 @@ export function WaferVisual() {
         </div>
 
         <div className="grid min-w-0 content-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-3">
-          <div className="grid min-w-0 gap-2 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
-            <p className="min-w-0 text-xs font-semibold uppercase leading-5 tracking-[0.14em] text-slate-500">measured map</p>
-            <span className="shrink-0 rounded-full bg-white px-2.5 py-1 text-[0.68rem] font-semibold text-blue-700">screened</span>
+          <div className="flex min-w-0 items-center justify-between gap-3">
+            <p className="min-w-0 text-xs font-semibold uppercase leading-5 tracking-[0.12em] text-slate-500">measured map</p>
+            <span className="shrink-0 rounded-full bg-white px-2.5 py-1 text-[0.68rem] font-semibold text-blue-700">candidate regions</span>
           </div>
           <div className="grid grid-cols-8 gap-1.5">
             {Array.from({ length: 48 }, (_, index) => {
@@ -115,12 +103,6 @@ export function WaferVisual() {
           </div>
           <p className="text-xs leading-5 text-slate-500">Measured points become a map for the next decision.</p>
         </div>
-      </div>
-
-      <div className="mt-4 grid gap-3 sm:grid-cols-3">
-        <Metric label="library" value="composition gradient" />
-        <Metric label="output" value="measured map" />
-        <Metric label="next" value="candidate regions" />
       </div>
     </div>
   )
