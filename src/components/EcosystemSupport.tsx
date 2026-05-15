@@ -19,7 +19,7 @@ export function EcosystemSupport() {
         <SectionHeader
           eyebrow="Follow-up support"
           title="Broader support when a material map needs deeper follow-up"
-          description="Some campaigns need deeper follow-up after the first material map. Bochum-based characterization, microscopy, microfabrication, interface analysis, localized electrochemistry, and data-analysis expertise can support that work."
+          description="Some campaigns need deeper follow-up after the first material map. Bochum-based characterization, microscopy, microfabrication, interface analysis, localized electrochemistry, and data-analysis routes may support that work when the project scope calls for them."
         />
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

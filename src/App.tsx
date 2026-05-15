@@ -11,6 +11,7 @@ import { Footer } from "./components/Footer"
 import { Header } from "./components/Header"
 import { Hero } from "./components/Hero"
 import { ProblemCards } from "./components/ProblemCards"
+import { ResearchBasis } from "./components/ResearchBasis"
 import { WhatWeDo } from "./components/WhatWeDo"
 import { capabilityGroups, methodGroups } from "./data/siteInventory"
 
@@ -28,6 +29,7 @@ function HomePage() {
       <DecisionBrief />
       <ProblemCards />
       <WhatWeDo />
+      <ResearchBasis />
       <CapabilityGrid />
       <ApplicationGrid />
       <ExampleCampaigns limit={2} />

@@ -7,7 +7,7 @@ const proofChips = [
   "Up to 7 co-sputtered elements",
   "Composition-property maps",
   "SDC / SECCM electrochemistry",
-  "Active-learning follow-up",
+  "Data-guided follow-up",
 ]
 
 export function Hero() {

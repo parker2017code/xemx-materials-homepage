@@ -10,7 +10,7 @@ const methods = [
   "Mechanical screening",
   "Optical / magnetic screening",
   "SDC / SECCM electrochemistry",
-  "Active-learning measurement",
+  "Data-guided measurement",
 ]
 
 export function MethodsPreview() {

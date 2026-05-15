@@ -10,8 +10,8 @@ export const applications: Application[] = [
     title: "Electrocatalyst discovery",
     description:
       "Catalyst and electrode material libraries where local activity, stability, and surface response need to be compared across many compositions.",
-    fit: "Applies to HER, OER, ORR, and complex catalyst compositions before full-cell or hardware testing.",
-    examples: ["HER / OER", "ORR", "complex catalysts"],
+    fit: "Applies to HER, OER, ORR, water electrolysis, CO2-reduction, battery-interface, and complex catalyst questions before full-cell or hardware testing.",
+    examples: ["HER / OER", "ORR", "CO2 reduction"],
   },
   {
     title: "Complex alloys and solid solutions",

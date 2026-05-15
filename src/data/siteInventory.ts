@@ -29,16 +29,22 @@ export const capabilityGroups: DetailGroup[] = [
         technical: "Wafer-scale libraries with measured positions across the composition space.",
       },
       {
-        name: "Hundreds of measured points",
+        name: "342 measured compositions",
         status: "core",
-        plain: "The customer gets a measured map across related samples.",
-        technical: "Measured positions are reported with composition and property context.",
+        plain: "The customer gets a measured map across related material variants.",
+        technical: "342 measured compositions in the standard library framing, reported with composition and property context.",
       },
       {
         name: "Multisource magnetron co-sputtering",
         status: "core",
         plain: "Several source materials can be deposited together so composition changes across the sample.",
         technical: "Co-sputtered lateral composition-gradient libraries.",
+      },
+      {
+        name: "Up to 7 co-sputtered elements",
+        status: "core",
+        plain: "Complex element sets can be configured when the material question calls for them.",
+        technical: "Multisource co-sputtering for ternary and higher-order material spaces.",
       },
       {
         name: "Multicomponent material spaces",
@@ -146,7 +152,7 @@ export const capabilityGroups: DetailGroup[] = [
         name: "Data-guided iteration",
         status: "core",
         plain: "Use the first measured map to decide where the next campaign focuses.",
-        technical: "Active learning and Gaussian-process-guided measurement selection when appropriate.",
+        technical: "Data-guided measurement and follow-up selection when appropriate.",
       },
       {
         name: "Thin-film proxy discipline",
@@ -250,8 +256,8 @@ export const methodGroups: DetailGroup[] = [
     items: [
       { name: "Composition-property maps", status: "core", plain: "Measured maps tying properties to composition regions." },
       { name: "Multi-property comparison", status: "core", plain: "Tradeoff analysis when several properties matter at once." },
-      { name: "Active learning", status: "core", plain: "Measured results guide the next measurement or campaign instead of guessing the next sample." },
-      { name: "Gaussian-process measurement selection", status: "core", plain: "A model can choose informative measurement points when the campaign has enough structure for it." },
+      { name: "Data-guided measurement follow-up", status: "core", plain: "Measured results guide the next measurement, sample, or campaign." },
+      { name: "Gaussian-process measurement selection", status: "support", plain: "A model can help choose informative measurement points when the campaign has enough structure for it." },
       { name: "XCA-assisted XRD analysis", status: "support", plain: "Automated phase-identification support can help interpret large diffraction data sets." },
       { name: "VAE-style novelty detection", status: "support", plain: "Pattern analysis can help flag unknown or unusual XRD results for expert review." },
       { name: "Deposition source permutations", status: "support", plain: "Multiple library campaigns can sample larger multielement spaces without pretending to cover every composition." },

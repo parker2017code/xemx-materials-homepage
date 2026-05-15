@@ -34,8 +34,8 @@ export const campaigns: Campaign[] = [
     question:
       "Which mixed-metal surface gives the activity and stability profile worth repeating under the customer test protocol?",
     campaign:
-      "Prepare a catalyst material library and run localized electrochemical measurements across the sample.",
-    output: "Measured activity map with regions to repeat or refine.",
+      "Prepare a catalyst material library and run localized electrochemical measurements across the sample; CO2-reduction or battery-interface variants can be scoped when the protocol fits.",
+    output: "Measured activity or surface-response map with regions to repeat or refine.",
     nextStep: "Validate selected catalysts under the customer test protocol.",
   },
   {

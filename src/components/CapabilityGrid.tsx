@@ -27,9 +27,9 @@ const capabilityGroups = [
   {
     title: "Data-guided iteration",
     description:
-      "Measured maps support experimental design, multi-property tradeoff comparison, active-learning measurement selection, and next-campaign choices.",
+      "Measured maps support experimental design, multi-property tradeoff comparison, data-guided measurement choices, and next-campaign decisions.",
     icon: BarChart3,
-    items: ["composition-property maps", "tradeoff comparison", "Gaussian-process selection", "next campaign"],
+    items: ["composition-property maps", "tradeoff comparison", "measurement follow-up", "next campaign"],
   },
 ]
 
