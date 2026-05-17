@@ -1,4 +1,4 @@
-# XemX Agent Guidance
+﻿# xemX Agent Guidance
 
 ## Codex Operating Spine
 
@@ -33,10 +33,14 @@ Rewrite matches as direct positive sentences.
 Preferred style:
 
 - Say the concrete thing first.
+- Every sentence should add an actor, action, evidence, material system, measured output, constraint, consequence, useful distinction, or judgment. Cut sentences that only add polish.
+- Lead with the buyer's real question: what material system, what property target, what sample plan, what measurement, what decision, and what next test.
 - Name the actor, action, evidence, status, missing piece, and consequence.
+- Preserve limits before style. Say when something is a proposed campaign, measured result, example workflow, partner-supported route, or future sales claim.
+- Use plain verbs: make, measure, compare, map, screen, reject, choose, validate, quote, schedule, ship.
 - Avoid motivational, manifesto, brochure, or thought-leadership phrasing.
 - Keep product claims tied to a real user, workflow, proof point, or operational requirement.
-- For XemX public copy, avoid generic SaaS headings and claims such as `platform capabilities`, `technology overview`, `where the platform applies`, `complete picture`, `any problem`, and `start a conversation`. Use the buyer's words instead: material system, target property, current test bottleneck, measured output, wafer position, composition range, and next validation step.
+- For xemX public copy, avoid generic SaaS headings and claims such as `platform capabilities`, `technology overview`, `where the platform applies`, `complete picture`, `any problem`, and `start a conversation`. Use the buyer's words instead: material system, target property, current test bottleneck, measured output, wafer position, composition range, and next validation step.
 - Avoid repeated framework nouns when a concrete object is available. Prefer wafer, composition range, XRD map, resistivity data, accepted txid, wallet prompt, receipt, local reject, or validation sample over vague route/lane/path/story language.
 
 ## Required Check
@@ -48,3 +52,9 @@ npm run lint:copy
 ```
 
 If the command fails, rewrite the flagged copy and run it again. Do not leave flagged copy in changed files.
+
+For broader prose audits across HTML, docs, and source strings, also run:
+
+```sh
+node scripts/audit-facing-copy.mjs
+```
