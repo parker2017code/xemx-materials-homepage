@@ -1,10 +1,10 @@
-# XemX Preview Publishing Notes
+# xemX Preview Publishing Notes
 
 This mockup is suitable for private review, not final public launch.
 
 Before publishing it as the main public site, run a separate launch pass for:
 
-- Branding: confirm the final CD Manual values. This preview now uses the available XemX SVG mark, Gantari, dark navy `#000030`, violet `#5f37f0`, sky `#9dc3fa`, and sharp UI geometry from the brand material available locally.
+- Branding: confirm the final CD Manual values. This preview now uses the available xemX SVG mark, Gantari, dark navy `#000030`, violet `#5f37f0`, sky `#9dc3fa`, and sharp UI geometry from the brand material available locally.
 - Contact route: replace the `mailto:` form with the real destination or form provider.
 - Claims: confirm public wording for numbers, facility access, partner support, and follow-up samples.
 - Context authority: for this preview, use the supplied positioning and literature context as the source of truth. Do not treat current-site wording or third-party summaries as canonical copy.
@@ -38,7 +38,7 @@ When Parker says to make the site public and discoverable:
 4. Add final canonical URL, title, description, Open Graph, and Twitter card metadata.
 5. Add `sitemap.xml` and make sure `robots.txt` allows the public URLs.
 6. Add an `llms.txt` or equivalent plain summary file with the approved positioning, page map, and contact route.
-7. Keep the supplied XemX context as the copy authority unless Parker or XemX leadership provides newer approved wording.
+7. Keep the supplied xemX context as the copy authority unless Parker or xemX leadership provides newer approved wording.
 8. Check all links, hash routes, form behavior, favicon, logo rendering, keyboard navigation, mobile layout, and performance.
 9. Submit or refresh indexing through Google Search Console and Bing Webmaster Tools if accounts are available.
 10. Verify the live page with `curl`, a browser render check, and source sweeps for preview-only language.

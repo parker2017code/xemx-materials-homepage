@@ -19,7 +19,7 @@ This project should be developed like a durable system, not a static picture.
 - Keep the business context visible: the site exists to help R&D teams decide whether a screening campaign can answer a material question.
 - Use AI or automation only as an accelerator; generated output still needs review, tests, and evidence.
 
-## XemX-Specific Application
+## xemX-Specific Application
 
 - The main user action is sending a material question, not signing up for software.
 - The main proof is measured physical work: libraries, composition-property maps, and candidate regions.

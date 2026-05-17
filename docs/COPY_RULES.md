@@ -1,4 +1,4 @@
-# XemX Copy Rules
+# xemX Copy Rules
 
 Use the industry term only when it helps. Then translate it into the practical work.
 
@@ -14,7 +14,7 @@ Better:
 
 > We help teams test thin layers around contacts, barriers, caps, gates, memory stacks, and isolation areas before expensive device-level testing.
 
-## XemX Rule
+## xemX Rule
 
 - Name the material space or market when it helps the reader recognize the fit.
 - Immediately explain the real sample, property, interface, coating, process condition, or validation cost involved.
