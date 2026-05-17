@@ -1,17 +1,17 @@
-﻿xemX USE CASES AND EXPERIMENTAL CAPABILITIES
+XEMX USE CASES AND EXPERIMENTAL CAPABILITIES
 Authoritative guide for site and proposal editing. This is source material,
 not finished public copy.
 
 Purpose
-This guide defines what the xemX website may say, what should stay on detail
-pages, and what still needs project-specific wording. It uses the local xemX
+This guide defines what the XemX website may say, what should stay on detail
+pages, and what still needs project-specific wording. It uses the local XemX
 repo as the content authority, then checks that surface against the literature
 from Lars Banko, Alfred Ludwig, Wolfgang Schuhmann, Ruhr University Bochum, and
 ZGH-related work.
 
 Authority order
-1. Local xemX files in this repo.
-2. Literature with direct xemX, Banko, Ludwig, or Schuhmann involvement.
+1. Local XemX files in this repo.
+2. Literature with direct XemX, Banko, Ludwig, or Schuhmann involvement.
 3. General Ruhr University Bochum and ZGH capability evidence.
 4. Public company pages only as obsolete background, since this repo is
    replacing that surface.
@@ -48,14 +48,14 @@ Avoid these frames:
 
 1. LITERATURE BASIS
 
-1.1 Direct xemX / Banko / Ludwig / Schuhmann evidence
+1.1 Direct XemX / Banko / Ludwig / Schuhmann evidence
 
 Combinatorial thin-film libraries and measured maps
 - Literature supports co-sputtered thin-film material libraries, 100 mm wafer
   formats, 342 measurement areas, EDX composition maps, XRD maps, and
   four-point probe resistance maps.
 - Use publicly: yes.
-- Website translation: xemX creates thin-film libraries, measures many points,
+- Website translation: XemX creates thin-film libraries, measures many points,
   and returns composition-property maps.
 - Key source: Thelen, Banko, Zehl, Baha, Ludwig, Digital Discovery 2023,
   DOI 10.1039/D3DD00125C.
@@ -64,7 +64,7 @@ High-entropy alloy and complex-solid-solution electrocatalysts
 - Literature supports HEA and complex-solid-solution electrocatalyst discovery
   using co-sputtered libraries and high-throughput electrochemical screening.
 - Use publicly: yes.
-- Website translation: xemX can test multicomponent catalyst libraries before
+- Website translation: XemX can test multicomponent catalyst libraries before
   customer protocol, electrode, cell, or stack validation.
 - Key sources:
   - Banko et al., deposition source permutations, arXiv:2106.08776.
@@ -74,7 +74,7 @@ High-entropy alloy and complex-solid-solution electrocatalysts
 Water electrolysis and HER / OER / ORR screening
 - Literature supports HER, OER, and ORR screening on catalyst libraries.
 - Use publicly: yes.
-- Website translation: xemX can map local activity and stability-relevant
+- Website translation: XemX can map local activity and stability-relevant
   behavior across catalyst compositions, then select regions for validation.
 - Key sources:
   - Mo-Ru HER work, DOI 10.1002/celc.202400631.
@@ -116,7 +116,7 @@ Oxide and photoelectrochemical thin-film libraries
 - Literature supports oxide libraries and photoelectrochemical screening,
   including Ti-W-O, Fe-W-O, Fe-V-O, Ag-V-O, Bi-Mo-W-O, and related materials.
 - Use publicly: yes.
-- Website translation: xemX can map oxide and nitride thin-film regions where
+- Website translation: XemX can map oxide and nitride thin-film regions where
   structure, stoichiometry, optical response, electrical response, or
   photoelectrochemical behavior matter.
 - Key sources:
@@ -129,7 +129,7 @@ Reactive sputtered nitride and hard-film libraries
 - Literature supports Cr-Al-N and related reactive sputtered nitride studies
   tied to automated XRD, plasma diagnostics, and mechanical properties.
 - Use publicly: yes, as oxide/nitride and hard-film screening.
-- Website translation: xemX can screen reactive sputtered nitrides and oxides
+- Website translation: XemX can screen reactive sputtered nitrides and oxides
   where composition, phase, hardness, and process fit matter.
 - Key source: Banko et al., ACS Combinatorial Science 2019,
   DOI 10.1021/acscombsci.9b00123.
@@ -139,7 +139,7 @@ Magnetic and shape-memory screening
   libraries, and ferromagnetic shape-memory alloy library screening.
 - Use publicly: yes, as an application family. Keep final device and stack
   validation outside the claim.
-- Website translation: xemX can map magnetic response across thin-film
+- Website translation: XemX can map magnetic response across thin-film
   composition libraries and identify regions for stack-specific validation.
 - Key sources:
   - Ludwig, npj Computational Materials 2019, DOI 10.1038/s41524-019-0205-0.
@@ -702,7 +702,7 @@ Property and response types:
 6. WEBSITE PLACEMENT
 
 Homepage should show:
-- xemX creates measured thin-film material libraries.
+- XemX creates measured thin-film material libraries.
 - 100 mm, 342 measured areas, and up to 7 elements or cathodes as proof points.
 - The main output is a composition-property map.
 - Electrocatalyst and thin-film screening are the clearest lead examples.

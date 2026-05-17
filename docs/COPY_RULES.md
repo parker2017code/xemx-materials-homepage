@@ -1,10 +1,8 @@
-﻿# xemX Copy Rules
+# XemX Copy Rules
 
 Use the industry term only when it helps. Then translate it into the practical work.
 
 For each application or capability, say what someone is testing, measuring, buying, building, approving, or trying to avoid.
-
-Use `COPY_STYLE.md` for the repo-wide sentence standard. A public line should name the material system, target property, sample plan, measured output, decision, constraint, or next validation step.
 
 ## Pattern
 
@@ -16,7 +14,7 @@ Better:
 
 > We help teams test thin layers around contacts, barriers, caps, gates, memory stacks, and isolation areas before expensive device-level testing.
 
-## xemX Rule
+## XemX Rule
 
 - Name the material space or market when it helps the reader recognize the fit.
 - Immediately explain the real sample, property, interface, coating, process condition, or validation cost involved.
@@ -24,7 +22,6 @@ Better:
 - Avoid abstract corporate phrases that hide the work.
 - Do not lead with generic AI/software language.
 - Do not make xemX sound like only a coating company.
-- Cut any sentence that could fit a generic software product without changing the nouns.
 
 ## Useful Verbs
 
