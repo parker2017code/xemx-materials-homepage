@@ -19,6 +19,26 @@ const checkedExtensions = new Set([
   ".yml",
   ".yaml",
   ".json",
+  ".css",
+  ".svg",
+]);
+
+const copyCheckedExtensions = new Set([
+  ".md",
+  ".mdx",
+  ".html",
+  ".htm",
+  ".tsx",
+  ".jsx",
+  ".ts",
+  ".js",
+  ".astro",
+  ".vue",
+  ".svelte",
+  ".txt",
+  ".yml",
+  ".yaml",
+  ".json",
 ]);
 
 const skipDirs = new Set([
@@ -33,16 +53,17 @@ const skipDirs = new Set([
   "fixtures",
   "generated",
   "vendor",
-  "private-review",
 ]);
 
-const skipFiles = new Set([
+const copySkipFiles = new Set([
   "AGENTS.md",
+  "COPY_STYLE.md",
+  "CLAUDE.md",
   "scripts/lint-copy.mjs",
   "package-lock.json",
 ]);
 
-const rules = [
+const styleRules = [
   {
     name: "not-reframe-but",
     pattern: /\bnot\s+(?:just|only|merely|simply)?\s*[^.!?\n]{1,120}\s+but\s+(?:also\s+)?[^.!?\n]{1,120}/gi,
@@ -77,18 +98,66 @@ const rules = [
   },
   {
     name: "empty-marketing-verb",
-    pattern: /\b(unlock|empower|transform|revolutionize|seamless|robust|game[- ]changing)\b/gi,
+    pattern: /\b(unlock|empower|transformative|revolutionary|revolutionize|seamless|robust|holistic|game[- ]changing|cutting[- ]edge)\b/gi,
+  },
+  {
+    name: "ai-throat-clearing",
+    pattern: /\b(in today'?s rapidly evolving|it is important to note|it is worth noting|in conclusion|ultimately|at its core|in essence)\b/gi,
+  },
+  {
+    name: "public-meta-copy",
+    pattern: /\b(website copy|campaign copy|copy style|agent notes|agent guidance|copy cleanup|llm-facing|repo text|website project guidelines)\b/gi,
   },
 ];
 
+const publicMetaRules = [
+  {
+    name: "public-editorial-scaffold",
+    pattern:
+      /\b(website copy|campaign copy|website claims|default website claims|public story|public framing|copy style|agent notes|agent guidance|copy cleanup|llm-facing|repo text|website project guidelines|research basis section should show|section should show|how the sweep changes|feature the campaign|feature electrocatalyst|use the site to show|what the literature supports on the site|siteUse|keep the section compact|keep\s+[^.!?\n]{0,90}\bwording\b)\b/gi,
+  },
+];
+
+const legacyServedPageStyleAllowlist = new Set([
+  "index.html",
+  "index.original.html",
+  "js/main.js",
+  "revamped/index.html",
+  "revamped/js/main.js",
+]);
+
+const brandPattern = /\b(?:XemX|XEMX|xEMX)\b/g;
 const failures = [];
+
+const textFiles = [];
+walk(root);
+checkPagesExposure();
+
+for (const file of textFiles) {
+  checkBrand(file.fullPath, file.relativePath);
+  if (shouldCheckPublicMeta(file)) checkCopy(file.fullPath, file.relativePath, publicMetaRules, { rawHtml: true });
+  if (shouldCheckStyle(file)) checkCopy(file.fullPath, file.relativePath, styleRules, { rawHtml: false });
+}
+
+if (failures.length > 0) {
+  console.error("\nCopy lint failed:\n");
+
+  for (const failure of failures) {
+    console.error(`${failure.file}:${failure.line ?? 1} [${failure.rule}] ${failure.text}`);
+  }
+
+  console.error("\nUse `xemX`, keep guidance files out of served Pages output, and rewrite public text as direct material claims instead of editing notes.\n");
+  process.exit(1);
+}
+
+console.log("Copy lint passed.");
 
 function walk(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
 
   for (const entry of entries) {
     const fullPath = path.join(dir, entry.name);
-    const relativePath = path.relative(root, fullPath);
+    const relativePath = toPosix(path.relative(root, fullPath));
 
     if (entry.isDirectory()) {
       if (!skipDirs.has(entry.name)) walk(fullPath);
@@ -96,18 +165,55 @@ function walk(dir) {
     }
 
     if (!entry.isFile()) continue;
-    if (skipFiles.has(relativePath)) continue;
     if (!checkedExtensions.has(path.extname(entry.name))) continue;
 
-    checkFile(fullPath, relativePath);
+    textFiles.push({ fullPath, relativePath });
   }
 }
 
-function checkFile(fullPath, relativePath) {
+function checkBrand(fullPath, relativePath) {
   const text = fs.readFileSync(fullPath, "utf8");
   const lines = text.split(/\r?\n/);
 
-  for (const rule of rules) {
+  for (let i = 0; i < lines.length; i++) {
+    brandPattern.lastIndex = 0;
+    const match = brandPattern.exec(lines[i]);
+    if (match) {
+      failures.push({
+        file: relativePath,
+        line: i + 1,
+        rule: "brand-casing",
+        text: lines[i].trim(),
+      });
+    }
+  }
+}
+
+function shouldCheckCopy(file) {
+  if (!copyCheckedExtensions.has(path.extname(file.relativePath))) return false;
+  if (copySkipFiles.has(file.relativePath)) return false;
+  if (isPagesExcluded(file.relativePath)) return false;
+  return true;
+}
+
+function shouldCheckPublicMeta(file) {
+  return shouldCheckCopy(file);
+}
+
+function shouldCheckStyle(file) {
+  if (!shouldCheckCopy(file)) return false;
+  if (file.relativePath.includes("/assets/")) return false;
+  if (legacyServedPageStyleAllowlist.has(file.relativePath)) return false;
+  return true;
+}
+
+function checkCopy(fullPath, relativePath, activeRules, options) {
+  let text = fs.readFileSync(fullPath, "utf8");
+  if (!options.rawHtml && /\.(html|htm)$/i.test(relativePath)) text = stripHtmlCodeBlocks(text);
+
+  const lines = text.split(/\r?\n/);
+
+  for (const rule of activeRules) {
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
       if (isCodePropertyLine(line, rule.name)) continue;
@@ -126,22 +232,62 @@ function checkFile(fullPath, relativePath) {
   }
 }
 
+function stripHtmlCodeBlocks(text) {
+  return text
+    .replace(/<script\b[\s\S]*?<\/script>/gi, "")
+    .replace(/<style\b[\s\S]*?<\/style>/gi, "");
+}
+
 function isCodePropertyLine(line, ruleName) {
   if (ruleName !== "empty-marketing-verb") return false;
   return /\b(?:text-)?transform\s*:/.test(line) || /\btransition\s*:[^;]*\btransform\b/.test(line);
 }
 
-walk(root);
+function checkPagesExposure() {
+  if (!fs.existsSync(path.join(root, "CNAME"))) return;
 
-if (failures.length > 0) {
-  console.error("\nCopy lint failed. Rewrite these LLM-cadence patterns:\n");
+  const configPath = path.join(root, "_config.yml");
+  const config = fs.existsSync(configPath) ? fs.readFileSync(configPath, "utf8") : "";
+  const requiredExcludes = [
+    "AGENTS.md",
+    "COPY_STYLE.md",
+    "CLAUDE.md",
+    "package.json",
+    "package-lock.json",
+    "revamped/CLAUDE.md",
+    "revamped/README.md",
+    "scripts/",
+    ".github/",
+  ];
 
-  for (const failure of failures) {
-    console.error(`${failure.file}:${failure.line} [${failure.rule}] ${failure.text}`);
+  for (const exclude of requiredExcludes) {
+    if (!config.includes(`- ${exclude}`)) {
+      failures.push({
+        file: "_config.yml",
+        rule: "pages-exclude",
+        text: `Missing Pages exclude for ${exclude}`,
+      });
+    }
   }
-
-  console.error("\nRewrite as direct positive claims. Avoid rhetorical contrast framing.\n");
-  process.exit(1);
 }
 
-console.log("Copy lint passed.");
+function isPagesExcluded(relativePath) {
+  const configPath = path.join(root, "_config.yml");
+  if (!fs.existsSync(configPath)) return false;
+
+  const config = fs.readFileSync(configPath, "utf8");
+  const excludes = config
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => line.startsWith("- "))
+    .map((line) => line.slice(2).trim());
+
+  return excludes.some((exclude) => {
+    if (exclude.endsWith("/")) return relativePath.startsWith(exclude);
+    return relativePath === exclude;
+  });
+}
+
+function toPosix(value) {
+  return value.split(path.sep).join("/");
+}

@@ -7,21 +7,21 @@ const rows = [
     basis:
       "The Lars Banko and Alfred Ludwig literature supports the thin-film library, 100 mm format, 342 measured compositions, multielement co-sputtering, XRD mapping, and measured-map framing.",
     use:
-      "Feature the campaign as physical sample creation plus measured composition-property maps.",
+      "The campaign creates physical samples, maps composition-property behavior, and points to the regions that deserve validation.",
   },
   {
     label: "Localized electrochemistry",
     basis:
       "The Wolfgang Schuhmann-linked literature supports SDC, SECCM-style local electrochemistry, HER, OER, ORR, water-electrolysis, activity-stability, and surface-response screening.",
     use:
-      "Feature electrocatalyst, electrode, corrosion-relevant, CO2-reduction, and battery-interface questions as screened regions before the customer protocol.",
+      "These methods support electrocatalyst, electrode, corrosion-relevant, CO2-reduction, and battery-interface questions when local screening can narrow the next protocol.",
   },
   {
     label: "Bochum / ZGH follow-up",
     basis:
       "Ruhr and ZGH context supports broader characterization and interface expertise, but exact access depends on the project.",
     use:
-      "Keep microscopy, fabrication, interface, and partner follow-up wording scoped and conditional.",
+      "Microscopy, fabrication, interface analysis, and partner follow-up stay project-dependent until the scope confirms access and need.",
   },
 ]
 
@@ -30,8 +30,8 @@ export function ResearchBasis() {
     <section className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
       <SectionHeader
         eyebrow="Research basis"
-        title="How the sweep changes the website claims"
-        description="The strongest public story is a measured-materials campaign: make the library, measure it, compare tradeoffs, and decide what deserves validation."
+        title="Measured methods behind the campaign"
+        description="A measured-materials campaign makes the library, maps the properties, compares tradeoffs, and identifies the regions that deserve validation."
       />
 
       <div className="mt-8 grid gap-5 lg:grid-cols-3">

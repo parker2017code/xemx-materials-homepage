@@ -246,7 +246,7 @@ Approved vague wording:
 
 2.4 Avoid unless approved for a specific proposal
 
-Do not use as default website claims:
+Do not use as default public claims:
 - Full device validation.
 - Full battery-cell validation.
 - Full semiconductor integration.
@@ -731,14 +731,14 @@ Methods page should show:
 - Project-dependent SECCM and deeper characterization.
 - Data-guided measurement and follow-up.
 
-Research basis section should show:
+Research basis:
 - Lars Banko: materials-library campaigns, high-throughput workflows, active
   learning, XRD-analysis support.
 - Alfred Ludwig: combinatorial thin-film materials discovery, Ruhr/ZGH
   high-throughput methods, library synthesis and characterization.
 - Wolfgang Schuhmann: local electrochemical screening, SDC, SECCM, catalyst and
   electrode electrochemistry.
-- Keep the section compact. Use papers as evidence for methods, not as
+- The section stays compact. Papers support method claims; they are not
   decorative prestige.
 
 
@@ -764,6 +764,6 @@ Examples:
 
 8. SAME RULE FOR KASPA-EXPLAINED STYLE
 
-When translating this guide into website copy, follow the same rule used for
-Kaspa Explained work: explain the real job first, name the technical term only
-when it improves precision, and keep claim boundaries visible.
+When using this guide for public pages, explain the real job first, name the
+technical term only when it improves precision, and keep claim boundaries
+visible.
