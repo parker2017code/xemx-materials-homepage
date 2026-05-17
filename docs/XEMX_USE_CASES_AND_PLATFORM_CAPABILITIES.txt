@@ -46,12 +46,12 @@ Avoid these frames:
 - production qualification provider
 
 
-1. LITERATURE BASIS
+1. METHOD AND SOURCE BASIS
 
 1.1 Direct xemX / Banko / Ludwig / Schuhmann evidence
 
 Combinatorial thin-film libraries and measured maps
-- Literature supports co-sputtered thin-film material libraries, 100 mm wafer
+- Source set covers co-sputtered thin-film material libraries, 100 mm wafer
   formats, 342 measurement areas, EDX composition maps, XRD maps, and
   four-point probe resistance maps.
 - Use publicly: yes.
@@ -61,7 +61,7 @@ Combinatorial thin-film libraries and measured maps
   DOI 10.1039/D3DD00125C.
 
 High-entropy alloy and complex-solid-solution electrocatalysts
-- Literature supports HEA and complex-solid-solution electrocatalyst discovery
+- Source set covers HEA and complex-solid-solution electrocatalyst discovery
   using co-sputtered libraries and high-throughput electrochemical screening.
 - Use publicly: yes.
 - Website translation: xemX can test multicomponent catalyst libraries before
@@ -72,7 +72,7 @@ High-entropy alloy and complex-solid-solution electrocatalysts
   - Batchelor et al., Angewandte Chemie 2021, DOI 10.1002/anie.202014374.
 
 Water electrolysis and HER / OER / ORR screening
-- Literature supports HER, OER, and ORR screening on catalyst libraries.
+- Source set covers HER, OER, and ORR screening on catalyst libraries.
 - Use publicly: yes.
 - Website translation: xemX can map local activity and stability-relevant
   behavior across catalyst compositions, then select regions for validation.
@@ -82,7 +82,7 @@ Water electrolysis and HER / OER / ORR screening
   - Co-Fe-Ni OER screening work, DOI 10.1002/cctc.202401749.
 
 Scanning Droplet Cell and SECCM
-- Literature supports local electrochemical screening through Scanning Droplet
+- Source set covers local electrochemical screening through Scanning Droplet
   Cell and SECCM-style methods.
 - Use publicly: yes.
 - Website translation: SDC is a core local electrochemical screening method.
@@ -92,19 +92,19 @@ Scanning Droplet Cell and SECCM
   - Banko et al., Advanced Materials 2023, DOI 10.1002/adma.202207635.
 
 Data-guided measurement and follow-up
-- Literature supports active learning, Gaussian-process measurement selection,
+- Source set covers active learning, Gaussian-process measurement selection,
   and Bayesian optimization in materials-library workflows.
 - Use publicly: yes, translated into plain language.
 - Website translation: measured maps can guide the next measurement, the next
   library, or a smaller validation set.
-- Avoid public headline: "AI materials platform."
+- Avoid a software-first AI headline.
 - Key sources:
   - Thelen, Banko, Zehl, Baha, Ludwig, Digital Discovery 2023,
     DOI 10.1039/D3DD00125C.
   - Thelen et al., Advanced Science 2025, DOI 10.1002/advs.202507302.
 
 XRD interpretation support
-- Literature supports XCA-style automated XRD phase identification and VAE-style
+- Source set covers XCA-style automated XRD phase identification and VAE-style
   novelty detection for large XRD data sets.
 - Use publicly: detail page or methods page only.
 - Website translation: software can help interpret large XRD maps; expert review
@@ -113,7 +113,7 @@ XRD interpretation support
   Materials 2021, DOI 10.1038/s41524-021-00575-9.
 
 Oxide and photoelectrochemical thin-film libraries
-- Literature supports oxide libraries and photoelectrochemical screening,
+- Source set covers oxide libraries and photoelectrochemical screening,
   including Ti-W-O, Fe-W-O, Fe-V-O, Ag-V-O, Bi-Mo-W-O, and related materials.
 - Use publicly: yes.
 - Website translation: xemX can map oxide and nitride thin-film regions where
@@ -126,7 +126,7 @@ Oxide and photoelectrochemical thin-film libraries
   - Bi-Mo-W-O photoelectrochemical library, DOI 10.1515/zpch-2019-1439.
 
 Reactive sputtered nitride and hard-film libraries
-- Literature supports Cr-Al-N and related reactive sputtered nitride studies
+- Source set covers Cr-Al-N and related reactive sputtered nitride studies
   tied to automated XRD, plasma diagnostics, and mechanical properties.
 - Use publicly: yes, as oxide/nitride and hard-film screening.
 - Website translation: xemX can screen reactive sputtered nitrides and oxides
@@ -135,7 +135,7 @@ Reactive sputtered nitride and hard-film libraries
   DOI 10.1021/acscombsci.9b00123.
 
 Magnetic and shape-memory screening
-- Ruhr/ZGH/Ludwig literature supports MOKE mapping, magnetic thin-film
+- Ruhr/ZGH/Ludwig source set covers MOKE mapping, magnetic thin-film
   libraries, and ferromagnetic shape-memory alloy library screening.
 - Use publicly: yes, as an application family. Keep final device and stack
   validation outside the claim.
@@ -147,7 +147,7 @@ Magnetic and shape-memory screening
     2011, DOI 10.1088/1468-6996/12/5/054206.
 
 Follow-up samples and electrode transfer
-- Literature supports cases where hit compositions from thin-film screens were
+- Source set covers cases where hit compositions from thin-film screens were
   transferred into powder, electrode, foam, or gas-diffusion-electrode formats.
 - Use publicly: yes, with careful wording.
 - Website translation: selected regions can guide follow-up samples or customer
@@ -160,7 +160,7 @@ Follow-up samples and electrode transfer
   - Co-Fe-Ni OER work, DOI 10.1002/cctc.202401749.
 
 CO2 and battery-interface examples
-- Literature and Ruhr electrochemistry context support CO2-related
+- Ruhr electrochemistry source context covers CO2-related
   electrochemistry and battery-interface methods as plausible project-dependent
   questions.
 - Use publicly: yes, as project-dependent examples.
@@ -169,7 +169,7 @@ CO2 and battery-interface examples
   product selectivity.
 
 Semiconductor, RF acoustic, package, and interface examples
-- Literature supports thin-film semiconductor material libraries and general
+- Source set covers thin-film semiconductor material libraries and general
   thin-film screening methods. The local guide includes semiconductor,
   RF acoustic, package, barrier, liner, cap, contact, and interface examples.
 - Use publicly: yes, as application families and campaign examples.
@@ -731,10 +731,10 @@ Methods page should show:
 - Project-dependent SECCM and deeper characterization.
 - Data-guided measurement and follow-up.
 
-Research basis:
+Method basis:
 - Lars Banko: materials-library campaigns, high-throughput workflows, active
   learning, XRD-analysis support.
-- Alfred Ludwig: combinatorial thin-film materials discovery, Ruhr/ZGH
+- Alfred Ludwig: combinatorial thin-film materials search, Ruhr/ZGH
   high-throughput methods, library synthesis and characterization.
 - Wolfgang Schuhmann: local electrochemical screening, SDC, SECCM, catalyst and
   electrode electrochemistry.

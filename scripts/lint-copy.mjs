@@ -97,6 +97,10 @@ const styleRules = [
     pattern: /\b(platform capabilities|technology overview|where the platform applies|start a conversation|complete picture|all-in-one|end-to-end)\b/gi,
   },
   {
+    name: "generic-discovery-positioning",
+    pattern: /\bmaterials discovery\b/gi,
+  },
+  {
     name: "empty-marketing-verb",
     pattern: /\b(unlock|empower|transformative|revolutionary|revolutionize|seamless|robust|holistic|game[- ]changing|cutting[- ]edge)\b/gi,
   },
@@ -115,6 +119,11 @@ const publicMetaRules = [
     name: "public-editorial-scaffold",
     pattern:
       /\b(website copy|campaign copy|website claims|default website claims|public story|public framing|copy style|agent notes|agent guidance|copy cleanup|llm-facing|repo text|website project guidelines|research basis section should show|section should show|how the sweep changes|feature the campaign|feature electrocatalyst|use the site to show|what the literature supports on the site|siteUse|keep the section compact|keep\s+[^.!?\n]{0,90}\bwording\b)\b/gi,
+  },
+  {
+    name: "internal-research-scaffold",
+    pattern:
+      /\b(what the literature supports|research basis|local capability guide|support a narrow claim|the evidence supports|appears directly|literature supports|how the sweep changes)\b/gi,
   },
 ];
 

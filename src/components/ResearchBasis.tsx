@@ -3,25 +3,25 @@ import { SectionHeader } from "./SectionHeader"
 
 const rows = [
   {
-    label: "Combinatorial materials libraries",
+    label: "Physical material libraries",
     basis:
-      "The Lars Banko and Alfred Ludwig literature supports the thin-film library, 100 mm format, 342 measured compositions, multielement co-sputtering, XRD mapping, and measured-map framing.",
+      "xemX can make thin-film libraries with many related compositions in one campaign, including 100 mm formats and multielement co-sputtered samples.",
     use:
-      "The campaign creates physical samples, maps composition-property behavior, and points to the regions that deserve validation.",
+      "The output is a measured composition-property map that shows which material regions deserve follow-up.",
   },
   {
-    label: "Localized electrochemistry",
+    label: "Localized electrochemical screening",
     basis:
-      "The Wolfgang Schuhmann-linked literature supports SDC, SECCM-style local electrochemistry, HER, OER, ORR, water-electrolysis, activity-stability, and surface-response screening.",
+      "For catalyst, electrode, corrosion-relevant, CO2-reduction, and battery-interface questions, xemX can screen local activity, stability, and surface response before a full customer protocol.",
     use:
-      "These methods support electrocatalyst, electrode, corrosion-relevant, CO2-reduction, and battery-interface questions when local screening can narrow the next protocol.",
+      "The goal is to narrow the search space before the next expensive electrochemical or device-level test.",
   },
   {
-    label: "Bochum / ZGH follow-up",
+    label: "Project-dependent follow-up",
     basis:
-      "Ruhr and ZGH context supports broader characterization and interface expertise, but exact access depends on the project.",
+      "Microscopy, fabrication, interface analysis, and partner-supported characterization can come in when the material question calls for them.",
     use:
-      "Microscopy, fabrication, interface analysis, and partner follow-up stay project-dependent until the scope confirms access and need.",
+      "Final device, cell, stack, package, fab, production, or qualification testing stays outside the standard campaign claim.",
   },
 ]
 
@@ -29,9 +29,9 @@ export function ResearchBasis() {
   return (
     <section className="mx-auto max-w-[1200px] px-6 py-16 lg:px-10 lg:py-20 xl:px-16">
       <SectionHeader
-        eyebrow="Research basis"
-        title="Measured methods behind the campaign"
-        description="A measured-materials campaign makes the library, maps the properties, compares tradeoffs, and identifies the regions that deserve validation."
+        eyebrow="Experimental materials search"
+        title="Make real samples, measure the map, choose the next test."
+        description="xemX helps R&D teams test many real material variations, measure which versions look best, and narrow options before expensive validation."
       />
 
       <div className="mt-8 grid gap-5 lg:grid-cols-3">
