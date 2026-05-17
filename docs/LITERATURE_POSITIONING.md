@@ -6,7 +6,7 @@ xemX is best understood as an experimental materials search company, not a gener
 
 Base sentence:
 
-> xemX helps R&D teams test many real material variations, measure which regions work, and narrow candidates before expensive validation.
+> xemX helps R&D teams test many real material variations, measure which versions look best, and narrow options before expensive validation.
 
 ## Core Work
 

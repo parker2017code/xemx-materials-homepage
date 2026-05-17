@@ -101,6 +101,10 @@ const styleRules = [
     pattern: /\bmaterials discovery\b/gi,
   },
   {
+    name: "stale-xemx-base-sentence",
+    pattern: /\bmeasure which regions work\b/gi,
+  },
+  {
     name: "empty-marketing-verb",
     pattern: /\b(unlock|empower|transformative|revolutionary|revolutionize|seamless|robust|holistic|game[- ]changing|cutting[- ]edge)\b/gi,
   },
